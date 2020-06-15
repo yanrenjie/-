@@ -35,6 +35,18 @@
                 @{
                     @"title" : @"绘制圆角图片",
                     @"vcname" : @"RoundImageViewController"
+                },
+                @{
+                    @"title" : @"自定义图片拖动裁剪",
+                    @"vcname" : @"SelfDefineImageClipViewController"
+                },
+                @{
+                    @"title" : @"涂鸦画板",
+                    @"vcname" : @"GraffitiBoardViewController"
+                },
+                @{
+                    @"title" : @"给图片设置阴影圆角",
+                    @"vcname" : @"SetRoundCornerImageWithShadowViewController"
                 }
             ]
         ];

@@ -121,7 +121,7 @@
     NSData *data = UIImagePNGRepresentation(image);
     
     // 将文件保存到指定文件当中，同步方式保存
-    [data writeToFile:@"/Users/yanrenhao/Desktop/OC/抽屉效果/ScreenShot/screenShot.png" atomically:YES];
+    [data writeToFile:@"/Users/yanrenhao/Desktop/OC/ComprehensiveProject/抽屉效果/ScreenShot/screenShot.png" atomically:YES];
     
     // 4、关闭上下文
     UIGraphicsEndImageContext();
