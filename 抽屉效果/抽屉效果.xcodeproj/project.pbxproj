@@ -12,11 +12,20 @@
 		314A028D2497269700B0C397 /* GraffitiBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 314A028C2497269700B0C397 /* GraffitiBoardView.m */; };
 		314A02912497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314A028F2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m */; };
 		314A02922497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314A02902497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib */; };
+		3150F712249B625600C1B624 /* RedrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150F710249B625600C1B624 /* RedrawViewController.m */; };
+		3150F713249B625600C1B624 /* RedrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3150F711249B625600C1B624 /* RedrawViewController.xib */; };
+		3150F716249B62DE00C1B624 /* RedrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150F715249B62DE00C1B624 /* RedrawView.m */; };
+		3150F719249BBF7000C1B624 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150F718249BBF7000C1B624 /* GradientViewController.m */; };
+		3150F71E249BD87D00C1B624 /* MultiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150F71C249BD87D00C1B624 /* MultiViewController.m */; };
+		3174E2062498857200C71CA9 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3174E2042498857200C71CA9 /* ClockViewController.m */; };
+		3174E2072498857200C71CA9 /* ClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3174E2052498857200C71CA9 /* ClockViewController.xib */; };
 		319760562494BECE0030E29E /* MyFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319760552494BECE0030E29E /* MyFileViewController.m */; };
 		319760592494C8EB0030E29E /* MyGirlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319760582494C8EB0030E29E /* MyGirlViewController.m */; };
 		3197605F2494CD5A0030E29E /* MyProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3197605D2494CD5A0030E29E /* MyProgressViewController.m */; };
 		319760602494CD5A0030E29E /* MyProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3197605E2494CD5A0030E29E /* MyProgressViewController.xib */; };
 		319760632494CD730030E29E /* MyProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 319760622494CD730030E29E /* MyProgressView.m */; };
+		31C5D5DD249C684C009B5ECE /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C5D5DB249C684C009B5ECE /* ThreadViewController.m */; };
+		31C5D5DE249C684C009B5ECE /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C5D5DC249C684C009B5ECE /* ThreadViewController.xib */; };
 		31EBDA932494728F00EECBCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDA922494728F00EECBCE /* AppDelegate.m */; };
 		31EBDA962494728F00EECBCE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDA952494728F00EECBCE /* SceneDelegate.m */; };
 		31EBDA992494728F00EECBCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDA982494728F00EECBCE /* ViewController.m */; };
@@ -42,6 +51,19 @@
 		314A028E2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetRoundCornerImageWithShadowViewController.h; sourceTree = "<group>"; };
 		314A028F2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetRoundCornerImageWithShadowViewController.m; sourceTree = "<group>"; };
 		314A02902497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetRoundCornerImageWithShadowViewController.xib; sourceTree = "<group>"; };
+		3150F70F249B625600C1B624 /* RedrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedrawViewController.h; sourceTree = "<group>"; };
+		3150F710249B625600C1B624 /* RedrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedrawViewController.m; sourceTree = "<group>"; };
+		3150F711249B625600C1B624 /* RedrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RedrawViewController.xib; sourceTree = "<group>"; };
+		3150F714249B62DE00C1B624 /* RedrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedrawView.h; sourceTree = "<group>"; };
+		3150F715249B62DE00C1B624 /* RedrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedrawView.m; sourceTree = "<group>"; };
+		3150F717249BBF7000C1B624 /* GradientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientViewController.h; sourceTree = "<group>"; };
+		3150F718249BBF7000C1B624 /* GradientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientViewController.m; sourceTree = "<group>"; };
+		3150F71B249BD87D00C1B624 /* MultiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiViewController.h; sourceTree = "<group>"; };
+		3150F71C249BD87D00C1B624 /* MultiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiViewController.m; sourceTree = "<group>"; };
+		3150F720249BDDD400C1B624 /* Complex.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Complex.pch; sourceTree = "<group>"; };
+		3174E2032498857200C71CA9 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		3174E2042498857200C71CA9 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
+		3174E2052498857200C71CA9 /* ClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockViewController.xib; sourceTree = "<group>"; };
 		319760542494BECE0030E29E /* MyFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFileViewController.h; sourceTree = "<group>"; };
 		319760552494BECE0030E29E /* MyFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFileViewController.m; sourceTree = "<group>"; };
 		319760572494C8EB0030E29E /* MyGirlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyGirlViewController.h; sourceTree = "<group>"; };
@@ -51,6 +73,9 @@
 		3197605E2494CD5A0030E29E /* MyProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProgressViewController.xib; sourceTree = "<group>"; };
 		319760612494CD730030E29E /* MyProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProgressView.h; sourceTree = "<group>"; };
 		319760622494CD730030E29E /* MyProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProgressView.m; sourceTree = "<group>"; };
+		31C5D5DA249C684C009B5ECE /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		31C5D5DB249C684C009B5ECE /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		31C5D5DC249C684C009B5ECE /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
 		31EBDA8E2494728F00EECBCE /* 抽屉效果.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "抽屉效果.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EBDA912494728F00EECBCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31EBDA922494728F00EECBCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3150F71A249BD85500C1B624 /* 新闻类多控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				3150F71B249BD87D00C1B624 /* MultiViewController.h */,
+				3150F71C249BD87D00C1B624 /* MultiViewController.m */,
+			);
+			path = "新闻类多控制器";
+			sourceTree = "<group>";
+		};
 		3197605A2494CD1B0030E29E /* 头部缩放 */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +142,16 @@
 			path = "进度条";
 			sourceTree = "<group>";
 		};
+		31C5D5D9249C6830009B5ECE /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				31C5D5DA249C684C009B5ECE /* ThreadViewController.h */,
+				31C5D5DB249C684C009B5ECE /* ThreadViewController.m */,
+				31C5D5DC249C684C009B5ECE /* ThreadViewController.xib */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
 		31EBDA852494728F00EECBCE = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +171,9 @@
 		31EBDA902494728F00EECBCE /* 抽屉效果 */ = {
 			isa = PBXGroup;
 			children = (
-				31FFC2542496109C0098D769 /* New Group */,
+				31C5D5D9249C6830009B5ECE /* 多线程 */,
+				3150F71A249BD85500C1B624 /* 新闻类多控制器 */,
+				31FFC2542496109C0098D769 /* CALayer */,
 				31FFC24E2495DF630098D769 /* 绘制圆角图片 */,
 				3197605B2494CD3C0030E29E /* 进度条 */,
 				3197605A2494CD1B0030E29E /* 头部缩放 */,
@@ -138,6 +184,7 @@
 				31EBDA952494728F00EECBCE /* SceneDelegate.m */,
 				31EBDA972494728F00EECBCE /* ViewController.h */,
 				31EBDA982494728F00EECBCE /* ViewController.m */,
+				3150F720249BDDD400C1B624 /* Complex.pch */,
 				31EBDA9A2494728F00EECBCE /* Main.storyboard */,
 				31EBDA9D2494729000EECBCE /* Assets.xcassets */,
 				31EBDA9F2494729000EECBCE /* LaunchScreen.storyboard */,
@@ -178,15 +225,25 @@
 				314A028E2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.h */,
 				314A028F2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m */,
 				314A02902497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib */,
+				3150F70F249B625600C1B624 /* RedrawViewController.h */,
+				3150F710249B625600C1B624 /* RedrawViewController.m */,
+				3150F711249B625600C1B624 /* RedrawViewController.xib */,
+				3150F714249B62DE00C1B624 /* RedrawView.h */,
+				3150F715249B62DE00C1B624 /* RedrawView.m */,
 			);
 			path = "绘制圆角图片";
 			sourceTree = "<group>";
 		};
-		31FFC2542496109C0098D769 /* New Group */ = {
+		31FFC2542496109C0098D769 /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				3174E2032498857200C71CA9 /* ClockViewController.h */,
+				3174E2042498857200C71CA9 /* ClockViewController.m */,
+				3174E2052498857200C71CA9 /* ClockViewController.xib */,
+				3150F717249BBF7000C1B624 /* GradientViewController.h */,
+				3150F718249BBF7000C1B624 /* GradientViewController.m */,
 			);
-			path = "New Group";
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,14 +303,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C5D5DE249C684C009B5ECE /* ThreadViewController.xib in Resources */,
 				319760602494CD5A0030E29E /* MyProgressViewController.xib in Resources */,
 				31EBDAA12494729000EECBCE /* LaunchScreen.storyboard in Resources */,
 				314A02922497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib in Resources */,
+				3174E2072498857200C71CA9 /* ClockViewController.xib in Resources */,
 				31EBDA9E2494729000EECBCE /* Assets.xcassets in Resources */,
 				314A028A2497263900B0C397 /* GraffitiBoardViewController.xib in Resources */,
 				31EBDA9C2494728F00EECBCE /* Main.storyboard in Resources */,
 				31EBDAB52494AAEA00EECBCE /* SettingViewController.xib in Resources */,
 				31FFC25E249647020098D769 /* SelfDefineImageClipViewController.xib in Resources */,
+				3150F713249B625600C1B624 /* RedrawViewController.xib in Resources */,
 				31FFC2532495E1920098D769 /* RoundImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C5D5DD249C684C009B5ECE /* ThreadViewController.m in Sources */,
 				31EBDA992494728F00EECBCE /* ViewController.m in Sources */,
 				319760562494BECE0030E29E /* MyFileViewController.m in Sources */,
 				31EBDA932494728F00EECBCE /* AppDelegate.m in Sources */,
@@ -272,13 +333,18 @@
 				31EBDAA42494729000EECBCE /* main.m in Sources */,
 				31FFC25D249647020098D769 /* SelfDefineImageClipViewController.m in Sources */,
 				319760592494C8EB0030E29E /* MyGirlViewController.m in Sources */,
+				3150F716249B62DE00C1B624 /* RedrawView.m in Sources */,
 				31EBDAAD24947A2800EECBCE /* DrawerViewController.m in Sources */,
 				319760632494CD730030E29E /* MyProgressView.m in Sources */,
+				3150F712249B625600C1B624 /* RedrawViewController.m in Sources */,
+				3150F719249BBF7000C1B624 /* GradientViewController.m in Sources */,
 				31EBDA962494728F00EECBCE /* SceneDelegate.m in Sources */,
 				31EBDAB42494AAEA00EECBCE /* SettingViewController.m in Sources */,
+				3174E2062498857200C71CA9 /* ClockViewController.m in Sources */,
 				314A028D2497269700B0C397 /* GraffitiBoardView.m in Sources */,
 				31FFC2522495E1920098D769 /* RoundImageViewController.m in Sources */,
 				314A02912497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m in Sources */,
+				3150F71E249BD87D00C1B624 /* MultiViewController.m in Sources */,
 				314A02892497263900B0C397 /* GraffitiBoardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "${SRCROOT}/抽屉效果/Complex.pch";
 				INFOPLIST_FILE = "抽屉效果/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,6 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "${SRCROOT}/抽屉效果/Complex.pch";
 				INFOPLIST_FILE = "抽屉效果/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

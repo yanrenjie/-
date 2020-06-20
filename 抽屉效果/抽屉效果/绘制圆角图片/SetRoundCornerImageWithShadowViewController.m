@@ -23,6 +23,7 @@
     self.imageView.layer.shadowOffset = CGSizeMake(5, 5);
     self.imageView.layer.shadowRadius = 15;
     
+    
 }
 
 /*

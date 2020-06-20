@@ -47,6 +47,26 @@
                 @{
                     @"title" : @"给图片设置阴影圆角",
                     @"vcname" : @"SetRoundCornerImageWithShadowViewController"
+                },
+                @{
+                    @"title" : @"时钟",
+                    @"vcname" : @"ClockViewController"
+                },
+                @{
+                    @"title" : @"根据绘制路径用粒子效果重绘",
+                    @"vcname" : @"RedrawViewController"
+                },
+                @{
+                    @"title" : @"颜色渐变",
+                    @"vcname" : @"GradientViewController"
+                },
+                @{
+                    @"title" : @"新闻类多视图控制器",
+                    @"vcname" : @"MultiViewController"
+                },
+                @{
+                    @"title" : @"多线程实现方案",
+                    @"vcname" : @"ThreadViewController"
                 }
             ]
         ];

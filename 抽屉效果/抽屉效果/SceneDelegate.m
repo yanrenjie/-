@@ -17,6 +17,7 @@
 //    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:vc];
 //    self.window.rootViewController = naVC;
 //    self.window.backgroundColor = UIColor.whiteColor;
+    
 }
 
 
