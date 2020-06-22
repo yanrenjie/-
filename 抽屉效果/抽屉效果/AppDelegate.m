@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "ThreadViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -26,6 +27,13 @@
 //        self.window.backgroundColor = UIColor.whiteColor;
 //        self.window.rootViewController = naVC;
 //    }
+//    ThreadViewController *vc = [ThreadViewController new];
+//    extern int _jie;
+//    extern NSString *_jie_name;
+//    _jie = 300;
+//    _jie_name = @"Le Bron James";
+//    NSLog(@"%d  ------   %@", _jie, _jie_name);
+    
     return YES;
 }
 

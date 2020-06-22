@@ -17,7 +17,14 @@
 
 @end
 
+
+
 @implementation ThreadViewController
+
+static NSString *zaza = @"HHHHHH";
+NSInteger _jie = 100;
+NSString *_jie_name = @"JackeyYan";
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -262,5 +269,26 @@ void * _Nullable runAction(void * _Nullable string) {
         });
     });
 }
+
+
+#pragma mark - GCD定时器
+- (void)GCD_Timer {
+    // 参数1: 指定source类型为定时器类型
+    // 参数4: 指定定时执行的任务在哪个队列中进行
+    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
+    // 参数3: 间隔执行时间
+    // 参数4: 精准度
+    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 3.0 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
+    dispatch_source_set_event_handler(timer, ^{
+        NSLog(@"这儿就是定时执行的任务");
+    });
+    // 启动定时器
+    dispatch_resume(timer);
+    
+    
+    // 如果直接调用这个方法，会不执行定时器任务，因为定时器对象是局部变量，方法执行完毕后都释放了，所以需要一个属性强引用
+    // self.timer = timer;
+}
+
 
 @end

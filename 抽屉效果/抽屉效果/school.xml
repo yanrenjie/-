@@ -1,0 +1,11 @@
+<schools>
+	<school name="清华大学" province="北京市" city="北京市" id="1000001" description="中国对顶级世界著名大学"/>
+	<school name="北京大学" province="北京市" city="北京市" id="1000001" description="中国对顶级世界著名大学"/>
+	<school name="人民大学" province="北京市" city="北京市" id="1000001" description="中国对顶级世界著名大学"/>
+	<school name="航空航天大学" province="北京市" city="北京市" id="1000001" description="中国对顶级世界著名大学"/>
+	<school name="复旦大学" province="北京市" city="北京市" id="1000001" description="中国对顶级世界著名大学"/>
+	<school name="交通大学" province="北京市" city="北京市" id="1000001" description="中国对顶级世界著名大学"/>
+	<school name="南京大学" province="北京市" city="北京市" id="1000001" description="中国对顶级世界著名大学"/>
+	<school name="华中科技大学" province="北京市" city="北京市" id="1000001" description="中国对顶级世界著名大学"/>
+	<school name="武汉大学大学" province="北京市" city="北京市" id="1000001" description="中国对顶级世界著名大学"/>
+</schools>

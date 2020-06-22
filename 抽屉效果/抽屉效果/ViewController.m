@@ -14,6 +14,8 @@
 
 @end
 
+
+
 @implementation ViewController
 
 - (NSArray *)titleArray {
@@ -67,6 +69,14 @@
                 @{
                     @"title" : @"多线程实现方案",
                     @"vcname" : @"ThreadViewController"
+                },
+                @{
+                    @"title" : @"RunLoop",
+                    @"vcname" : @"RunLoopViewController"
+                },
+                @{
+                    @"title" : @"NSURLSession",
+                    @"vcname" : @"NSURLSessionViewController"
                 }
             ]
         ];
