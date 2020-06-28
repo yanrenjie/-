@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import "ThreadViewController.h"
+
 @interface AppDelegate ()
 
 @end

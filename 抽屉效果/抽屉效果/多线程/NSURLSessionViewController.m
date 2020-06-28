@@ -8,9 +8,16 @@
 
 #import "NSURLSessionViewController.h"
 #import "SchoolModel.h"
+#import <Security/Security.h>
 
-@interface NSURLSessionViewController ()<NSXMLParserDelegate>
+@interface NSURLSessionViewController ()<NSXMLParserDelegate, NSURLSessionDataDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+@property(nonatomic, strong)NSFileHandle *handle;
 
+@property(nonatomic, strong)NSMutableData *imageData;
+@property(nonatomic, assign)NSInteger totalSize;
+@property(nonatomic, assign)NSInteger currentSize;
 @end
 
 @implementation NSURLSessionViewController
@@ -22,7 +29,11 @@
     // 将OC对象序列化为JSON数据
 //    [self OCObjectToJSON];
     // XML 解析
-    [self xmlParser];
+//    [self xmlParser];
+    
+//    [self downloadBigData];
+    
+    [self checkHTTPEnable];
 }
 
 // NSURLSesstion使用步骤
@@ -31,6 +42,7 @@
 }
 
 
+#pragma mark - NSURLSession
 // 发送一个GET请求
 - (void)getMethod {
     // 1、确认请求路径
@@ -72,6 +84,61 @@
     }];
     [task resume];
 }
+
+
+#pragma mark - NSURLSession 下载大文件，使用代理方式，代理方法如下
+- (NSMutableData *)imageData {
+    if (!_imageData) {
+        _imageData = [NSMutableData data];
+    }
+    return _imageData;
+}
+
+- (void)downloadBigData {
+    NSURL *url = [NSURL URLWithString:@"http://vfx.mtime.cn/Video/2019/03/19/mp4/190319212559089721.mp4"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request];
+    [dataTask resume];
+}
+
+// 要实现三个代理方法，并监听下载进度
+// 接收到响应的时候调用
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler {
+    // 获取总的下载数据的大小
+    self.totalSize = response.expectedContentLength;
+    
+    // 创建文件路径
+    NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
+    NSString *filePath = [path stringByAppendingPathComponent:@"love.mp4"];
+    // 创建一个文件b句柄
+    NSFileHandle *handle = [NSFileHandle fileHandleForWritingAtPath:filePath];
+    self.handle = handle;
+    // 要允许请求
+    completionHandler(NSURLSessionResponseAllow);
+}
+
+// 接受到数据就调用，这个方法会调用很多次
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data {
+    [self.handle writeData:data];
+}
+
+// 下载完成或者下载出错的时候调用
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error {
+    [self.handle closeFile];
+}
+
+
+#pragma mark - 文件句柄的使用方法
+/**
+ NSFileHandle：文件句柄（指针）
+ 特点：在写数据的时候，边写数据边移动位置
+ 使用步骤：
+ 1、创建空文件
+ 2、创建文件句柄指针指向该文件
+ 3、当接受到数据的时候，使用该句柄来写数据
+ 4、当所有的数据写入完毕，应该关闭句柄指针
+ */
 
 
 #pragma mark - JSON 解析
@@ -167,6 +234,29 @@
 // 解析完毕
 - (void)parserDidEndDocument:(NSXMLParser *)parser {
     NSLog(@"解析完毕");
+}
+
+
+- (void)sendARequest {
+    NSURL *url = [NSURL URLWithString:@"http://https//app-gw.csdn.net/cms-app/v1/config/read_ios_by_keys?keys=homeParentTagsConfigB"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+    }];
+    
+    [task resume];
+}
+
+
+- (void)checkHTTPEnable {
+    NSDictionary *ref = (__bridge NSDictionary *)CFNetworkCopySystemProxySettings();
+    BOOL enable = [[ref objectForKey:@"HTTPEnable"] boolValue];
+    if (enable) {
+        NSLog(@"开启了代理");
+    } else {
+        NSLog(@"没开代理");
+    }
 }
 
 @end

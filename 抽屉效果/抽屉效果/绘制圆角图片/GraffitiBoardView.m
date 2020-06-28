@@ -17,7 +17,6 @@
 @property(nonatomic, assign)CGFloat currentWidth;
 // 也可以给UIBezierPath扩充一个颜色属性，便于在drawRect方法中直接使用
 @property(nonatomic, strong)NSMutableArray *colorArray;
-
 @end
 
 
@@ -82,6 +81,7 @@
     // 手指在移动过程中
     else if (pan.state == UIGestureRecognizerStateChanged) {
         [self.path addLineToPoint:currentPoint];
+        
         [self setNeedsDisplay];
     }
 }

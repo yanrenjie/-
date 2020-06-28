@@ -1,22 +1,20 @@
 //
-//  ViewController.m
+//  NotesViewController.m
 //  抽屉效果
 //
-//  Created by 颜仁浩 on 2020/6/13.
+//  Created by 颜仁浩 on 2020/6/29.
 //  Copyright © 2020 Jackey. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "NotesViewController.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface NotesViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic, strong)NSArray *titleArray;
 
 @end
 
-
-
-@implementation ViewController
+@implementation NotesViewController
 
 - (NSArray *)titleArray {
     if (!_titleArray) {
@@ -77,6 +75,14 @@
                 @{
                     @"title" : @"NSURLSession",
                     @"vcname" : @"NSURLSessionViewController"
+                },
+                @{
+                    @"title" : @"文件句柄写大文件",
+                    @"vcname" : @"DownBigFileViewController"
+                },
+                @{
+                    @"title" : @"小视频",
+                    @"vcname" : @"SmallVideoViewController"
                 }
             ]
         ];

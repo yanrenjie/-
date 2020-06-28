@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3113CB6524A1B39C00286200 /* DownBigFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3113CB6324A1B39C00286200 /* DownBigFileViewController.m */; };
+		3113CB6624A1B39C00286200 /* DownBigFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3113CB6424A1B39C00286200 /* DownBigFileViewController.xib */; };
 		3144FE5424A05CA400DDA87F /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144FE5224A05CA400DDA87F /* RunLoopViewController.m */; };
 		3144FE5524A05CA400DDA87F /* RunLoopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3144FE5324A05CA400DDA87F /* RunLoopViewController.xib */; };
 		3144FE5924A09B3B00DDA87F /* NSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144FE5724A09B3B00DDA87F /* NSURLSessionViewController.m */; };
@@ -19,6 +21,17 @@
 		314A028D2497269700B0C397 /* GraffitiBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 314A028C2497269700B0C397 /* GraffitiBoardView.m */; };
 		314A02912497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314A028F2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m */; };
 		314A02922497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314A02902497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib */; };
+		3150E90724A8A26600099AD1 /* SmallVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150E90524A8A26600099AD1 /* SmallVideoViewController.m */; };
+		3150E90824A8A26600099AD1 /* SmallVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3150E90624A8A26600099AD1 /* SmallVideoViewController.xib */; };
+		3150E90B24A8C75F00099AD1 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150E90A24A8C75F00099AD1 /* VideoView.m */; };
+		3150E91224A8C8C300099AD1 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150E91024A8C8C300099AD1 /* VideoCell.m */; };
+		3150E91324A8C8C300099AD1 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3150E91124A8C8C300099AD1 /* VideoCell.xib */; };
+		3150E92624A8F67200099AD1 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150E92524A8F67200099AD1 /* HomeViewController.m */; };
+		3150E92C24A8F6A800099AD1 /* SameCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150E92B24A8F6A800099AD1 /* SameCityViewController.m */; };
+		3150E92F24A8F6BA00099AD1 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150E92E24A8F6BA00099AD1 /* MineViewController.m */; };
+		3150E93224A8FA2200099AD1 /* JieTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150E93124A8FA2200099AD1 /* JieTabBarController.m */; };
+		3150E93824A8FDA700099AD1 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150E93624A8FDA700099AD1 /* NotesViewController.m */; };
+		3150E93924A8FDA700099AD1 /* NotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3150E93724A8FDA700099AD1 /* NotesViewController.xib */; };
 		3150F712249B625600C1B624 /* RedrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150F710249B625600C1B624 /* RedrawViewController.m */; };
 		3150F713249B625600C1B624 /* RedrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3150F711249B625600C1B624 /* RedrawViewController.xib */; };
 		3150F716249B62DE00C1B624 /* RedrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150F715249B62DE00C1B624 /* RedrawView.m */; };
@@ -35,7 +48,6 @@
 		31C5D5DE249C684C009B5ECE /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C5D5DC249C684C009B5ECE /* ThreadViewController.xib */; };
 		31EBDA932494728F00EECBCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDA922494728F00EECBCE /* AppDelegate.m */; };
 		31EBDA962494728F00EECBCE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDA952494728F00EECBCE /* SceneDelegate.m */; };
-		31EBDA992494728F00EECBCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDA982494728F00EECBCE /* ViewController.m */; };
 		31EBDA9C2494728F00EECBCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EBDA9A2494728F00EECBCE /* Main.storyboard */; };
 		31EBDA9E2494729000EECBCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EBDA9D2494729000EECBCE /* Assets.xcassets */; };
 		31EBDAA12494729000EECBCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EBDA9F2494729000EECBCE /* LaunchScreen.storyboard */; };
@@ -43,6 +55,9 @@
 		31EBDAAD24947A2800EECBCE /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDAAC24947A2800EECBCE /* DrawerViewController.m */; };
 		31EBDAB42494AAEA00EECBCE /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDAB22494AAEA00EECBCE /* SettingViewController.m */; };
 		31EBDAB52494AAEA00EECBCE /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EBDAB32494AAEA00EECBCE /* SettingViewController.xib */; };
+		31EE10D424A369D200E15D94 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE10D324A369D200E15D94 /* NSDictionary+Log.m */; };
+		31EE10D724A36A2000E15D94 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE10D624A36A2000E15D94 /* NSArray+Log.m */; };
+		31F897D024A478420089DBA5 /* NSString+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F897CF24A478420089DBA5 /* NSString+extension.m */; };
 		31FFC2522495E1920098D769 /* RoundImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FFC2502495E1920098D769 /* RoundImageViewController.m */; };
 		31FFC2532495E1920098D769 /* RoundImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FFC2512495E1920098D769 /* RoundImageViewController.xib */; };
 		31FFC25D249647020098D769 /* SelfDefineImageClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FFC25A249647020098D769 /* SelfDefineImageClipViewController.m */; };
@@ -50,6 +65,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3113CB6224A1B39C00286200 /* DownBigFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownBigFileViewController.h; sourceTree = "<group>"; };
+		3113CB6324A1B39C00286200 /* DownBigFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownBigFileViewController.m; sourceTree = "<group>"; };
+		3113CB6424A1B39C00286200 /* DownBigFileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownBigFileViewController.xib; sourceTree = "<group>"; };
 		3144FE5124A05CA400DDA87F /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		3144FE5224A05CA400DDA87F /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
 		3144FE5324A05CA400DDA87F /* RunLoopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunLoopViewController.xib; sourceTree = "<group>"; };
@@ -68,6 +86,25 @@
 		314A028E2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetRoundCornerImageWithShadowViewController.h; sourceTree = "<group>"; };
 		314A028F2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetRoundCornerImageWithShadowViewController.m; sourceTree = "<group>"; };
 		314A02902497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetRoundCornerImageWithShadowViewController.xib; sourceTree = "<group>"; };
+		3150E90424A8A26600099AD1 /* SmallVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmallVideoViewController.h; sourceTree = "<group>"; };
+		3150E90524A8A26600099AD1 /* SmallVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmallVideoViewController.m; sourceTree = "<group>"; };
+		3150E90624A8A26600099AD1 /* SmallVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallVideoViewController.xib; sourceTree = "<group>"; };
+		3150E90924A8C75F00099AD1 /* VideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
+		3150E90A24A8C75F00099AD1 /* VideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
+		3150E90F24A8C8C300099AD1 /* VideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		3150E91024A8C8C300099AD1 /* VideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		3150E91124A8C8C300099AD1 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		3150E92424A8F67200099AD1 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3150E92524A8F67200099AD1 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3150E92A24A8F6A800099AD1 /* SameCityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SameCityViewController.h; sourceTree = "<group>"; };
+		3150E92B24A8F6A800099AD1 /* SameCityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SameCityViewController.m; sourceTree = "<group>"; };
+		3150E92D24A8F6BA00099AD1 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		3150E92E24A8F6BA00099AD1 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		3150E93024A8FA2200099AD1 /* JieTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JieTabBarController.h; sourceTree = "<group>"; };
+		3150E93124A8FA2200099AD1 /* JieTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JieTabBarController.m; sourceTree = "<group>"; };
+		3150E93524A8FDA700099AD1 /* NotesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		3150E93624A8FDA700099AD1 /* NotesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		3150E93724A8FDA700099AD1 /* NotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesViewController.xib; sourceTree = "<group>"; };
 		3150F70F249B625600C1B624 /* RedrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedrawViewController.h; sourceTree = "<group>"; };
 		3150F710249B625600C1B624 /* RedrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedrawViewController.m; sourceTree = "<group>"; };
 		3150F711249B625600C1B624 /* RedrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RedrawViewController.xib; sourceTree = "<group>"; };
@@ -98,8 +135,6 @@
 		31EBDA922494728F00EECBCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		31EBDA942494728F00EECBCE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		31EBDA952494728F00EECBCE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		31EBDA972494728F00EECBCE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		31EBDA982494728F00EECBCE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		31EBDA9B2494728F00EECBCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31EBDA9D2494729000EECBCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31EBDAA02494729000EECBCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,6 +145,12 @@
 		31EBDAB12494AAEA00EECBCE /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		31EBDAB22494AAEA00EECBCE /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		31EBDAB32494AAEA00EECBCE /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		31EE10D224A369D200E15D94 /* NSDictionary+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Log.h"; sourceTree = "<group>"; };
+		31EE10D324A369D200E15D94 /* NSDictionary+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
+		31EE10D524A36A2000E15D94 /* NSArray+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		31EE10D624A36A2000E15D94 /* NSArray+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		31F897CE24A478420089DBA5 /* NSString+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+extension.h"; sourceTree = "<group>"; };
+		31F897CF24A478420089DBA5 /* NSString+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+extension.m"; sourceTree = "<group>"; };
 		31FFC24F2495E1920098D769 /* RoundImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundImageViewController.h; sourceTree = "<group>"; };
 		31FFC2502495E1920098D769 /* RoundImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundImageViewController.m; sourceTree = "<group>"; };
 		31FFC2512495E1920098D769 /* RoundImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundImageViewController.xib; sourceTree = "<group>"; };
@@ -129,6 +170,154 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3113CB6124A1B36900286200 /* 下载大文件 */ = {
+			isa = PBXGroup;
+			children = (
+				3113CB6224A1B39C00286200 /* DownBigFileViewController.h */,
+				3113CB6324A1B39C00286200 /* DownBigFileViewController.m */,
+				3113CB6424A1B39C00286200 /* DownBigFileViewController.xib */,
+			);
+			path = "下载大文件";
+			sourceTree = "<group>";
+		};
+		3150E91424A8F55D00099AD1 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				3150E92124A8F61E00099AD1 /* Controller */,
+				3150E92224A8F61E00099AD1 /* Model */,
+				3150E92324A8F61E00099AD1 /* View */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		3150E91524A8F56600099AD1 /* 视频 */ = {
+			isa = PBXGroup;
+			children = (
+				3150E91E24A8F61600099AD1 /* Controller */,
+				3150E91F24A8F61600099AD1 /* Model */,
+				3150E92024A8F61600099AD1 /* View */,
+			);
+			path = "视频";
+			sourceTree = "<group>";
+		};
+		3150E91624A8F58D00099AD1 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				3150E91D24A8F60D00099AD1 /* Controller */,
+				3150E91B24A8F60C00099AD1 /* Model */,
+				3150E91C24A8F60D00099AD1 /* View */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		3150E91724A8F5AD00099AD1 /* 同城 */ = {
+			isa = PBXGroup;
+			children = (
+				3150E91824A8F60400099AD1 /* Controller */,
+				3150E91924A8F60400099AD1 /* Model */,
+				3150E91A24A8F60400099AD1 /* View */,
+			);
+			path = "同城";
+			sourceTree = "<group>";
+		};
+		3150E91824A8F60400099AD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3150E92A24A8F6A800099AD1 /* SameCityViewController.h */,
+				3150E92B24A8F6A800099AD1 /* SameCityViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3150E91924A8F60400099AD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3150E91A24A8F60400099AD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3150E91B24A8F60C00099AD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3150E91C24A8F60D00099AD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3150E91D24A8F60D00099AD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3150E92D24A8F6BA00099AD1 /* MineViewController.h */,
+				3150E92E24A8F6BA00099AD1 /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3150E91E24A8F61600099AD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3150E90424A8A26600099AD1 /* SmallVideoViewController.h */,
+				3150E90524A8A26600099AD1 /* SmallVideoViewController.m */,
+				3150E90624A8A26600099AD1 /* SmallVideoViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3150E91F24A8F61600099AD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3150E92024A8F61600099AD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3150E90924A8C75F00099AD1 /* VideoView.h */,
+				3150E90A24A8C75F00099AD1 /* VideoView.m */,
+				3150E90F24A8C8C300099AD1 /* VideoCell.h */,
+				3150E91024A8C8C300099AD1 /* VideoCell.m */,
+				3150E91124A8C8C300099AD1 /* VideoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3150E92124A8F61E00099AD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3150E92424A8F67200099AD1 /* HomeViewController.h */,
+				3150E92524A8F67200099AD1 /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3150E92224A8F61E00099AD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3150E92324A8F61E00099AD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3150F71A249BD85500C1B624 /* 新闻类多控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +360,7 @@
 				3144FE5624A09B3B00DDA87F /* NSURLSessionViewController.h */,
 				3144FE5724A09B3B00DDA87F /* NSURLSessionViewController.m */,
 				3144FE5824A09B3B00DDA87F /* NSURLSessionViewController.xib */,
+				3113CB6124A1B36900286200 /* 下载大文件 */,
 			);
 			path = "多线程";
 			sourceTree = "<group>";
@@ -194,6 +384,11 @@
 		31EBDA902494728F00EECBCE /* 抽屉效果 */ = {
 			isa = PBXGroup;
 			children = (
+				3150E91724A8F5AD00099AD1 /* 同城 */,
+				3150E91624A8F58D00099AD1 /* 我的 */,
+				3150E91524A8F56600099AD1 /* 视频 */,
+				3150E91424A8F55D00099AD1 /* 首页 */,
+				31EE10D124A369B000E15D94 /* 分类 */,
 				31C5D5D9249C6830009B5ECE /* 多线程 */,
 				3150F71A249BD85500C1B624 /* 新闻类多控制器 */,
 				31FFC2542496109C0098D769 /* CALayer */,
@@ -205,8 +400,11 @@
 				31EBDA922494728F00EECBCE /* AppDelegate.m */,
 				31EBDA942494728F00EECBCE /* SceneDelegate.h */,
 				31EBDA952494728F00EECBCE /* SceneDelegate.m */,
-				31EBDA972494728F00EECBCE /* ViewController.h */,
-				31EBDA982494728F00EECBCE /* ViewController.m */,
+				3150E93524A8FDA700099AD1 /* NotesViewController.h */,
+				3150E93624A8FDA700099AD1 /* NotesViewController.m */,
+				3150E93724A8FDA700099AD1 /* NotesViewController.xib */,
+				3150E93024A8FA2200099AD1 /* JieTabBarController.h */,
+				3150E93124A8FA2200099AD1 /* JieTabBarController.m */,
 				3150F720249BDDD400C1B624 /* Complex.pch */,
 				3144FE5B24A0EB5C00DDA87F /* school.json */,
 				3144FE6024A1242500DDA87F /* school.xml */,
@@ -233,6 +431,19 @@
 				319760552494BECE0030E29E /* MyFileViewController.m */,
 			);
 			path = "抽屉效果";
+			sourceTree = "<group>";
+		};
+		31EE10D124A369B000E15D94 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				31EE10D224A369D200E15D94 /* NSDictionary+Log.h */,
+				31EE10D324A369D200E15D94 /* NSDictionary+Log.m */,
+				31EE10D524A36A2000E15D94 /* NSArray+Log.h */,
+				31EE10D624A36A2000E15D94 /* NSArray+Log.m */,
+				31F897CE24A478420089DBA5 /* NSString+extension.h */,
+				31F897CF24A478420089DBA5 /* NSString+extension.m */,
+			);
+			path = "分类";
 			sourceTree = "<group>";
 		};
 		31FFC24E2495DF630098D769 /* 绘制圆角图片 */ = {
@@ -340,9 +551,13 @@
 				31EBDA9E2494729000EECBCE /* Assets.xcassets in Resources */,
 				3144FE5524A05CA400DDA87F /* RunLoopViewController.xib in Resources */,
 				314A028A2497263900B0C397 /* GraffitiBoardViewController.xib in Resources */,
+				3150E90824A8A26600099AD1 /* SmallVideoViewController.xib in Resources */,
 				31EBDA9C2494728F00EECBCE /* Main.storyboard in Resources */,
 				31EBDAB52494AAEA00EECBCE /* SettingViewController.xib in Resources */,
+				3113CB6624A1B39C00286200 /* DownBigFileViewController.xib in Resources */,
 				3144FE5A24A09B3B00DDA87F /* NSURLSessionViewController.xib in Resources */,
+				3150E91324A8C8C300099AD1 /* VideoCell.xib in Resources */,
+				3150E93924A8FDA700099AD1 /* NotesViewController.xib in Resources */,
 				31FFC25E249647020098D769 /* SelfDefineImageClipViewController.xib in Resources */,
 				3150F713249B625600C1B624 /* RedrawViewController.xib in Resources */,
 				31FFC2532495E1920098D769 /* RoundImageViewController.xib in Resources */,
@@ -356,12 +571,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31EE10D724A36A2000E15D94 /* NSArray+Log.m in Sources */,
+				3150E93224A8FA2200099AD1 /* JieTabBarController.m in Sources */,
 				31C5D5DD249C684C009B5ECE /* ThreadViewController.m in Sources */,
+				3150E92C24A8F6A800099AD1 /* SameCityViewController.m in Sources */,
 				3144FE5F24A0F81600DDA87F /* SchoolModel.m in Sources */,
-				31EBDA992494728F00EECBCE /* ViewController.m in Sources */,
 				319760562494BECE0030E29E /* MyFileViewController.m in Sources */,
 				31EBDA932494728F00EECBCE /* AppDelegate.m in Sources */,
+				3150E93824A8FDA700099AD1 /* NotesViewController.m in Sources */,
 				3197605F2494CD5A0030E29E /* MyProgressViewController.m in Sources */,
+				31F897D024A478420089DBA5 /* NSString+extension.m in Sources */,
+				3150E91224A8C8C300099AD1 /* VideoCell.m in Sources */,
+				3113CB6524A1B39C00286200 /* DownBigFileViewController.m in Sources */,
 				31EBDAA42494729000EECBCE /* main.m in Sources */,
 				31FFC25D249647020098D769 /* SelfDefineImageClipViewController.m in Sources */,
 				319760592494C8EB0030E29E /* MyGirlViewController.m in Sources */,
@@ -369,13 +590,18 @@
 				31EBDAAD24947A2800EECBCE /* DrawerViewController.m in Sources */,
 				319760632494CD730030E29E /* MyProgressView.m in Sources */,
 				3150F712249B625600C1B624 /* RedrawViewController.m in Sources */,
+				3150E90B24A8C75F00099AD1 /* VideoView.m in Sources */,
 				3150F719249BBF7000C1B624 /* GradientViewController.m in Sources */,
 				31EBDA962494728F00EECBCE /* SceneDelegate.m in Sources */,
+				3150E92F24A8F6BA00099AD1 /* MineViewController.m in Sources */,
 				3144FE5924A09B3B00DDA87F /* NSURLSessionViewController.m in Sources */,
 				31EBDAB42494AAEA00EECBCE /* SettingViewController.m in Sources */,
 				3174E2062498857200C71CA9 /* ClockViewController.m in Sources */,
+				3150E92624A8F67200099AD1 /* HomeViewController.m in Sources */,
 				314A028D2497269700B0C397 /* GraffitiBoardView.m in Sources */,
 				31FFC2522495E1920098D769 /* RoundImageViewController.m in Sources */,
+				31EE10D424A369D200E15D94 /* NSDictionary+Log.m in Sources */,
+				3150E90724A8A26600099AD1 /* SmallVideoViewController.m in Sources */,
 				3144FE5424A05CA400DDA87F /* RunLoopViewController.m in Sources */,
 				314A02912497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m in Sources */,
 				3150F71E249BD87D00C1B624 /* MultiViewController.m in Sources */,
