@@ -141,6 +141,7 @@
     self.secondHandLayer.transform = CATransform3DRotate(self.secondHandLayer.transform, angle3, 0, 0, 1);
 }
 
+
 - (void)dealloc {
     [self.timer invalidate];
     self.timer = nil;

@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class VideoModel;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface VideoView : UIView
+
+@property(nonatomic, strong)NSArray<VideoModel *> *modelArray;
 
 @end
 

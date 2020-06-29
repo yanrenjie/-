@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@class VideoModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface VideoCell : UITableViewCell
+
+@property(nonatomic, strong)VideoModel *cellModel;
+
+- (void)hiddenBgImageView;
+
+- (void)showBgImageView;
 
 @end
 

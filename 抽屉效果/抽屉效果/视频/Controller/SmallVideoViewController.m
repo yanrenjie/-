@@ -8,18 +8,37 @@
 
 #import "SmallVideoViewController.h"
 #import "VideoView.h"
+#import "VideoModel.h"
 
 @interface SmallVideoViewController ()
 
 @property(nonatomic, strong)UIImageView *imageView;
 
+@property(nonatomic, strong)NSArray *videoModelArray;
+
 @end
 
 @implementation SmallVideoViewController
 
+- (NSArray *)videoModelArray {
+    if (!_videoModelArray) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"videos.json" ofType:nil];
+        NSData *data = [NSData dataWithContentsOfFile:path];
+        NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+        for (NSDictionary *dict in array) {
+            VideoModel *model = [VideoModel videoModelWithDict:dict];
+            [tempArray addObject:model];
+        }
+        _videoModelArray = tempArray;
+    }
+    return _videoModelArray;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     VideoView *videoView = [[VideoView alloc] initWithFrame:CGRectMake(0, -44, SW, SH - 83 + 44)];
+    videoView.modelArray = self.videoModelArray;
     videoView.backgroundColor = UIColor.redColor;
     [self.view addSubview:videoView];
 }
@@ -37,18 +56,5 @@
     return _imageView;
 }
 
-// 获取视频第一帧
-//- (UIImage*)getVideoPreViewImage {
-//    AVAssetImageGenerator *assetGen = [[AVAssetImageGenerator alloc] initWithAsset:self.set];
-//
-//    assetGen.appliesPreferredTrackTransform = YES;
-//    CMTime time = CMTimeMakeWithSeconds(0.0, 600);
-//    NSError *error = nil;
-//    CMTime actualTime;
-//    CGImageRef image = [assetGen copyCGImageAtTime:time actualTime:&actualTime error:&error];
-//    UIImage *videoImage = [[UIImage alloc] initWithCGImage:image];
-//    CGImageRelease(image);
-//    return videoImage;
-//}
 
 @end

@@ -57,6 +57,9 @@
 		31EBDAB52494AAEA00EECBCE /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EBDAB32494AAEA00EECBCE /* SettingViewController.xib */; };
 		31EE10D424A369D200E15D94 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE10D324A369D200E15D94 /* NSDictionary+Log.m */; };
 		31EE10D724A36A2000E15D94 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE10D624A36A2000E15D94 /* NSArray+Log.m */; };
+		31F2F38C24A989A900C1872A /* VideoPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F2F38B24A989A900C1872A /* VideoPlayerManager.m */; };
+		31F2F38F24A9914F00C1872A /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F2F38E24A9914F00C1872A /* VideoModel.m */; };
+		31F2F39124A9971C00C1872A /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 31F2F39024A9971C00C1872A /* videos.json */; };
 		31F897D024A478420089DBA5 /* NSString+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F897CF24A478420089DBA5 /* NSString+extension.m */; };
 		31FFC2522495E1920098D769 /* RoundImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FFC2502495E1920098D769 /* RoundImageViewController.m */; };
 		31FFC2532495E1920098D769 /* RoundImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FFC2512495E1920098D769 /* RoundImageViewController.xib */; };
@@ -149,6 +152,11 @@
 		31EE10D324A369D200E15D94 /* NSDictionary+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
 		31EE10D524A36A2000E15D94 /* NSArray+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		31EE10D624A36A2000E15D94 /* NSArray+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		31F2F38A24A989A900C1872A /* VideoPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerManager.h; sourceTree = "<group>"; };
+		31F2F38B24A989A900C1872A /* VideoPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerManager.m; sourceTree = "<group>"; };
+		31F2F38D24A9914F00C1872A /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		31F2F38E24A9914F00C1872A /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		31F2F39024A9971C00C1872A /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 		31F897CE24A478420089DBA5 /* NSString+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+extension.h"; sourceTree = "<group>"; };
 		31F897CF24A478420089DBA5 /* NSString+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+extension.m"; sourceTree = "<group>"; };
 		31FFC24F2495E1920098D769 /* RoundImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundImageViewController.h; sourceTree = "<group>"; };
@@ -279,6 +287,10 @@
 		3150E91F24A8F61600099AD1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				31F2F38A24A989A900C1872A /* VideoPlayerManager.h */,
+				31F2F38B24A989A900C1872A /* VideoPlayerManager.m */,
+				31F2F38D24A9914F00C1872A /* VideoModel.h */,
+				31F2F38E24A9914F00C1872A /* VideoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -406,6 +418,7 @@
 				3150E93024A8FA2200099AD1 /* JieTabBarController.h */,
 				3150E93124A8FA2200099AD1 /* JieTabBarController.m */,
 				3150F720249BDDD400C1B624 /* Complex.pch */,
+				31F2F39024A9971C00C1872A /* videos.json */,
 				3144FE5B24A0EB5C00DDA87F /* school.json */,
 				3144FE6024A1242500DDA87F /* school.xml */,
 				3144FE5D24A0F81600DDA87F /* SchoolModel.h */,
@@ -558,6 +571,7 @@
 				3144FE5A24A09B3B00DDA87F /* NSURLSessionViewController.xib in Resources */,
 				3150E91324A8C8C300099AD1 /* VideoCell.xib in Resources */,
 				3150E93924A8FDA700099AD1 /* NotesViewController.xib in Resources */,
+				31F2F39124A9971C00C1872A /* videos.json in Resources */,
 				31FFC25E249647020098D769 /* SelfDefineImageClipViewController.xib in Resources */,
 				3150F713249B625600C1B624 /* RedrawViewController.xib in Resources */,
 				31FFC2532495E1920098D769 /* RoundImageViewController.xib in Resources */,
@@ -597,8 +611,10 @@
 				3144FE5924A09B3B00DDA87F /* NSURLSessionViewController.m in Sources */,
 				31EBDAB42494AAEA00EECBCE /* SettingViewController.m in Sources */,
 				3174E2062498857200C71CA9 /* ClockViewController.m in Sources */,
+				31F2F38C24A989A900C1872A /* VideoPlayerManager.m in Sources */,
 				3150E92624A8F67200099AD1 /* HomeViewController.m in Sources */,
 				314A028D2497269700B0C397 /* GraffitiBoardView.m in Sources */,
+				31F2F38F24A9914F00C1872A /* VideoModel.m in Sources */,
 				31FFC2522495E1920098D769 /* RoundImageViewController.m in Sources */,
 				31EE10D424A369D200E15D94 /* NSDictionary+Log.m in Sources */,
 				3150E90724A8A26600099AD1 /* SmallVideoViewController.m in Sources */,

@@ -7,15 +7,22 @@
 //
 
 #import "VideoView.h"
+#import "VideoPlayerManager.h"
 #import "VideoCell.h"
+#import "VideoModel.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface VideoView ()<UITableViewDelegate, UITableViewDataSource>
+@interface VideoView ()<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
 
 @property(nonatomic, strong)UITableView *tableView;
 
 @property(nonatomic, assign)CGFloat beginOffset;
 @property(nonatomic, assign)CGFloat endOffset;
 @property(nonatomic, assign)NSInteger pageIndex;
+@property(nonatomic, assign)NSInteger currentVideoIndex;
+@property(nonatomic, strong)VideoPlayerManager *playerManager;
+
+@property(nonatomic, strong)AVPlayerLayer *playerLayer;
 
 @end
 
@@ -30,8 +37,26 @@
         _tableView.rowHeight = self.frame.size.height;
         [_tableView registerNib:[UINib nibWithNibName:@"VideoCell" bundle:nil] forCellReuseIdentifier:@"VideoCell"];
         _tableView.pagingEnabled = YES;
+        _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
     return _tableView;
+}
+
+
+- (AVPlayerLayer *)playerLayer {
+    if (!_playerLayer) {
+        _playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.playerManager.player];
+        _playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+        _playerLayer.frame = self.bounds;
+    }
+    return _playerLayer;
+}
+
+- (VideoPlayerManager *)playerManager {
+    if (!_playerManager) {
+        _playerManager = [[VideoPlayerManager alloc] init];
+    }
+    return _playerManager;
 }
 
 
@@ -39,7 +64,10 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.pageIndex = 0;
+        self.currentVideoIndex = 0;
         [self setupUI];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chanageBgImage) name:@"VideoWillPlayingNotification" object:nil];
     }
     return self;
 }
@@ -52,51 +80,48 @@
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.modelArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     VideoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VideoCell" forIndexPath:indexPath];
+    cell.cellModel = self.modelArray[indexPath.row];
     return cell;
 }
 
 
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    self.beginOffset = scrollView.contentOffset.y;
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSInteger index = (NSInteger)(scrollView.contentOffset.y / self.tableView.frame.size.height);
+    // 判断是否应该切换播放源
+    if (index != self.currentVideoIndex) {
+        VideoCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.currentVideoIndex inSection:0]];
+        [cell showBgImageView];
+        [self.playerLayer removeFromSuperlayer];
+        self.currentVideoIndex = index;
+        VideoModel *model = self.modelArray[self.currentVideoIndex];
+        [self.playerManager changeVideoWithURL:[NSURL URLWithString:model.videoURL]];
+        VideoCell *cell1 = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.currentVideoIndex inSection:0]];
+        [cell1 hiddenBgImageView];
+        [cell1.contentView.layer insertSublayer:self.playerLayer atIndex:0];
+    }
 }
 
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    self.endOffset = scrollView.contentOffset.y;
-    CGFloat offset = self.endOffset - self.beginOffset;
-    
-    // 获取滑动距离的绝对值，看看是否超过了1/2个高度
-    CGFloat absOffset = fabs(offset);
-    
-    // 半个可视化区域高度
-    CGFloat halfViewHeight = self.frame.size.height * 0.5;
-    // 向前翻看视频，手指向下滑动
-    NSInteger tempIndex = self.pageIndex;
-    if (offset < 0) {
-        if (self.pageIndex != 0) {
-            if (absOffset > halfViewHeight) {
-                tempIndex--;
-            }
-        }
-    }
-    // 向后翻看视频，手指向上滑动
-    else {
-        if (absOffset > halfViewHeight) {
-            tempIndex++;
-        }
-    }
-    
-    // 判断是否应该切换到另外一个cell, 如果角标做了改动，则切换
-    if (tempIndex != self.pageIndex) {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:tempIndex inSection:0];
-        self.pageIndex = tempIndex;
-        [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
-    }
+
+- (void)setModelArray:(NSArray<VideoModel *> *)modelArray {
+    _modelArray = modelArray;
+    [self.tableView reloadData];
+    VideoCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    [cell.contentView.layer insertSublayer:self.playerLayer atIndex:0];
+    VideoModel *model = self.modelArray.firstObject;
+    [self.playerManager changeVideoWithURL:[NSURL URLWithString:model.videoURL]];
 }
+
+// 隐藏图片
+- (void)chanageBgImage {
+    VideoCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.currentVideoIndex inSection:0]];
+    [cell hiddenBgImageView];
+}
+
 
 @end

@@ -98,7 +98,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wife_thumb" translatesAutoresizingMaskIntoConstraints="NO" id="g2f-lI-9eC">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liuyifei3" translatesAutoresizingMaskIntoConstraints="NO" id="g2f-lI-9eC">
                         <rect key="frame" x="246" y="157" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="PrX-CF-hfK"/>
@@ -159,6 +159,18 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgImageView" destination="5zk-Dj-CHc" id="HOB-Fy-hyw"/>
+                <outlet property="contentLabel" destination="EsT-67-exf" id="k0o-S9-Z2D"/>
+                <outlet property="followImageView" destination="uw0-j3-jbe" id="C6F-iZ-k6g"/>
+                <outlet property="forwardBtn" destination="vB1-sS-9rZ" id="PXS-kI-OJl"/>
+                <outlet property="headImageView" destination="g2f-lI-9eC" id="4Ce-7A-bK0"/>
+                <outlet property="likeBtn" destination="rxz-OO-DUK" id="ZsC-hF-gUY"/>
+                <outlet property="musicLabel" destination="XNM-O3-Hwq" id="B5e-gF-2Pc"/>
+                <outlet property="playImageView" destination="ls2-99-2EW" id="JpU-Y7-tKi"/>
+                <outlet property="replyBtn" destination="bc0-37-Mb2" id="r0y-yZ-oRu"/>
+                <outlet property="userNameLabel" destination="laA-uG-NV0" id="Oex-Hb-yxG"/>
+            </connections>
             <point key="canvasLocation" x="-21.739130434782609" y="114.84375"/>
         </tableViewCell>
     </objects>
@@ -166,10 +178,10 @@
         <image name="douyin" width="25" height="25"/>
         <image name="hart_n" width="80" height="80"/>
         <image name="liuyifei002" width="325" height="484"/>
+        <image name="liuyifei3" width="423" height="440"/>
         <image name="message" width="60" height="60"/>
         <image name="pause" width="80" height="80"/>
         <image name="plus" width="25" height="25"/>
         <image name="share" width="60" height="60"/>
-        <image name="wife_thumb" width="200" height="200"/>
     </resources>
 </document>
