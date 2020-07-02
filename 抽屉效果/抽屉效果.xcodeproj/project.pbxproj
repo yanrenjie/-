@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3101B86F24AD9198005D6BC1 /* MultiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3101B86E24AD9198005D6BC1 /* MultiDetailViewController.m */; };
+		3101B87224ADB2AD005D6BC1 /* MusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3101B87124ADB2AD005D6BC1 /* MusicView.m */; };
 		3113CB6524A1B39C00286200 /* DownBigFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3113CB6324A1B39C00286200 /* DownBigFileViewController.m */; };
 		3113CB6624A1B39C00286200 /* DownBigFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3113CB6424A1B39C00286200 /* DownBigFileViewController.xib */; };
 		3144FE5424A05CA400DDA87F /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144FE5224A05CA400DDA87F /* RunLoopViewController.m */; };
@@ -21,6 +23,18 @@
 		314A028D2497269700B0C397 /* GraffitiBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 314A028C2497269700B0C397 /* GraffitiBoardView.m */; };
 		314A02912497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314A028F2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m */; };
 		314A02922497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314A02902497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib */; };
+		314DCC0B24AB1B9E009AE220 /* liuyife_00009.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCBFF24AB1B9E009AE220 /* liuyife_00009.mp4 */; };
+		314DCC0C24AB1B9E009AE220 /* liuyife_00008.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0024AB1B9E009AE220 /* liuyife_00008.mp4 */; };
+		314DCC0D24AB1B9E009AE220 /* liuyife_00012.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0124AB1B9E009AE220 /* liuyife_00012.mp4 */; };
+		314DCC0E24AB1B9E009AE220 /* liuyife_00011.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0224AB1B9E009AE220 /* liuyife_00011.mp4 */; };
+		314DCC0F24AB1B9E009AE220 /* liuyife_00005.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0324AB1B9E009AE220 /* liuyife_00005.mp4 */; };
+		314DCC1024AB1B9E009AE220 /* liuyife_00004.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0424AB1B9E009AE220 /* liuyife_00004.mp4 */; };
+		314DCC1124AB1B9E009AE220 /* liuyife_00010.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0524AB1B9E009AE220 /* liuyife_00010.mp4 */; };
+		314DCC1224AB1B9E009AE220 /* liuyife_00006.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0624AB1B9E009AE220 /* liuyife_00006.mp4 */; };
+		314DCC1324AB1B9E009AE220 /* liuyife_00007.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0724AB1B9E009AE220 /* liuyife_00007.mp4 */; };
+		314DCC1424AB1B9E009AE220 /* liuyife_00003.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0824AB1B9E009AE220 /* liuyife_00003.mp4 */; };
+		314DCC1524AB1B9E009AE220 /* liuyife_00002.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0924AB1B9E009AE220 /* liuyife_00002.mp4 */; };
+		314DCC1624AB1B9E009AE220 /* liuyife_00001.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 314DCC0A24AB1B9E009AE220 /* liuyife_00001.mp4 */; };
 		3150E90724A8A26600099AD1 /* SmallVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150E90524A8A26600099AD1 /* SmallVideoViewController.m */; };
 		3150E90824A8A26600099AD1 /* SmallVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3150E90624A8A26600099AD1 /* SmallVideoViewController.xib */; };
 		3150E90B24A8C75F00099AD1 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150E90A24A8C75F00099AD1 /* VideoView.m */; };
@@ -68,6 +82,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3101B86D24AD9198005D6BC1 /* MultiDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiDetailViewController.h; sourceTree = "<group>"; };
+		3101B86E24AD9198005D6BC1 /* MultiDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiDetailViewController.m; sourceTree = "<group>"; };
+		3101B87024ADB2AD005D6BC1 /* MusicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicView.h; sourceTree = "<group>"; };
+		3101B87124ADB2AD005D6BC1 /* MusicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicView.m; sourceTree = "<group>"; };
 		3113CB6224A1B39C00286200 /* DownBigFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownBigFileViewController.h; sourceTree = "<group>"; };
 		3113CB6324A1B39C00286200 /* DownBigFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownBigFileViewController.m; sourceTree = "<group>"; };
 		3113CB6424A1B39C00286200 /* DownBigFileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownBigFileViewController.xib; sourceTree = "<group>"; };
@@ -89,6 +107,18 @@
 		314A028E2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetRoundCornerImageWithShadowViewController.h; sourceTree = "<group>"; };
 		314A028F2497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetRoundCornerImageWithShadowViewController.m; sourceTree = "<group>"; };
 		314A02902497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetRoundCornerImageWithShadowViewController.xib; sourceTree = "<group>"; };
+		314DCBFF24AB1B9E009AE220 /* liuyife_00009.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00009.mp4; sourceTree = "<group>"; };
+		314DCC0024AB1B9E009AE220 /* liuyife_00008.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00008.mp4; sourceTree = "<group>"; };
+		314DCC0124AB1B9E009AE220 /* liuyife_00012.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00012.mp4; sourceTree = "<group>"; };
+		314DCC0224AB1B9E009AE220 /* liuyife_00011.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00011.mp4; sourceTree = "<group>"; };
+		314DCC0324AB1B9E009AE220 /* liuyife_00005.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00005.mp4; sourceTree = "<group>"; };
+		314DCC0424AB1B9E009AE220 /* liuyife_00004.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00004.mp4; sourceTree = "<group>"; };
+		314DCC0524AB1B9E009AE220 /* liuyife_00010.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00010.mp4; sourceTree = "<group>"; };
+		314DCC0624AB1B9E009AE220 /* liuyife_00006.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00006.mp4; sourceTree = "<group>"; };
+		314DCC0724AB1B9E009AE220 /* liuyife_00007.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00007.mp4; sourceTree = "<group>"; };
+		314DCC0824AB1B9E009AE220 /* liuyife_00003.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00003.mp4; sourceTree = "<group>"; };
+		314DCC0924AB1B9E009AE220 /* liuyife_00002.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00002.mp4; sourceTree = "<group>"; };
+		314DCC0A24AB1B9E009AE220 /* liuyife_00001.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liuyife_00001.mp4; sourceTree = "<group>"; };
 		3150E90424A8A26600099AD1 /* SmallVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmallVideoViewController.h; sourceTree = "<group>"; };
 		3150E90524A8A26600099AD1 /* SmallVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmallVideoViewController.m; sourceTree = "<group>"; };
 		3150E90624A8A26600099AD1 /* SmallVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallVideoViewController.xib; sourceTree = "<group>"; };
@@ -186,6 +216,25 @@
 				3113CB6424A1B39C00286200 /* DownBigFileViewController.xib */,
 			);
 			path = "下载大文件";
+			sourceTree = "<group>";
+		};
+		314DCBFE24AB1B9E009AE220 /* 刘亦菲 */ = {
+			isa = PBXGroup;
+			children = (
+				314DCBFF24AB1B9E009AE220 /* liuyife_00009.mp4 */,
+				314DCC0024AB1B9E009AE220 /* liuyife_00008.mp4 */,
+				314DCC0124AB1B9E009AE220 /* liuyife_00012.mp4 */,
+				314DCC0224AB1B9E009AE220 /* liuyife_00011.mp4 */,
+				314DCC0324AB1B9E009AE220 /* liuyife_00005.mp4 */,
+				314DCC0424AB1B9E009AE220 /* liuyife_00004.mp4 */,
+				314DCC0524AB1B9E009AE220 /* liuyife_00010.mp4 */,
+				314DCC0624AB1B9E009AE220 /* liuyife_00006.mp4 */,
+				314DCC0724AB1B9E009AE220 /* liuyife_00007.mp4 */,
+				314DCC0824AB1B9E009AE220 /* liuyife_00003.mp4 */,
+				314DCC0924AB1B9E009AE220 /* liuyife_00002.mp4 */,
+				314DCC0A24AB1B9E009AE220 /* liuyife_00001.mp4 */,
+			);
+			path = "刘亦菲";
 			sourceTree = "<group>";
 		};
 		3150E91424A8F55D00099AD1 /* 首页 */ = {
@@ -303,6 +352,8 @@
 				3150E90F24A8C8C300099AD1 /* VideoCell.h */,
 				3150E91024A8C8C300099AD1 /* VideoCell.m */,
 				3150E91124A8C8C300099AD1 /* VideoCell.xib */,
+				3101B87024ADB2AD005D6BC1 /* MusicView.h */,
+				3101B87124ADB2AD005D6BC1 /* MusicView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +386,8 @@
 			children = (
 				3150F71B249BD87D00C1B624 /* MultiViewController.h */,
 				3150F71C249BD87D00C1B624 /* MultiViewController.m */,
+				3101B86D24AD9198005D6BC1 /* MultiDetailViewController.h */,
+				3101B86E24AD9198005D6BC1 /* MultiDetailViewController.m */,
 			);
 			path = "新闻类多控制器";
 			sourceTree = "<group>";
@@ -396,6 +449,7 @@
 		31EBDA902494728F00EECBCE /* 抽屉效果 */ = {
 			isa = PBXGroup;
 			children = (
+				314DCBFE24AB1B9E009AE220 /* 刘亦菲 */,
 				3150E91724A8F5AD00099AD1 /* 同城 */,
 				3150E91624A8F58D00099AD1 /* 我的 */,
 				3150E91524A8F56600099AD1 /* 视频 */,
@@ -555,13 +609,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3144FE5C24A0EB5C00DDA87F /* school.json in Resources */,
+				314DCC0C24AB1B9E009AE220 /* liuyife_00008.mp4 in Resources */,
 				3144FE6124A1242500DDA87F /* school.xml in Resources */,
+				314DCC1624AB1B9E009AE220 /* liuyife_00001.mp4 in Resources */,
+				314DCC0F24AB1B9E009AE220 /* liuyife_00005.mp4 in Resources */,
 				31C5D5DE249C684C009B5ECE /* ThreadViewController.xib in Resources */,
+				314DCC0D24AB1B9E009AE220 /* liuyife_00012.mp4 in Resources */,
 				319760602494CD5A0030E29E /* MyProgressViewController.xib in Resources */,
+				314DCC0E24AB1B9E009AE220 /* liuyife_00011.mp4 in Resources */,
+				314DCC1424AB1B9E009AE220 /* liuyife_00003.mp4 in Resources */,
 				31EBDAA12494729000EECBCE /* LaunchScreen.storyboard in Resources */,
+				314DCC1324AB1B9E009AE220 /* liuyife_00007.mp4 in Resources */,
 				314A02922497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.xib in Resources */,
 				3174E2072498857200C71CA9 /* ClockViewController.xib in Resources */,
 				31EBDA9E2494729000EECBCE /* Assets.xcassets in Resources */,
+				314DCC1024AB1B9E009AE220 /* liuyife_00004.mp4 in Resources */,
 				3144FE5524A05CA400DDA87F /* RunLoopViewController.xib in Resources */,
 				314A028A2497263900B0C397 /* GraffitiBoardViewController.xib in Resources */,
 				3150E90824A8A26600099AD1 /* SmallVideoViewController.xib in Resources */,
@@ -569,10 +631,14 @@
 				31EBDAB52494AAEA00EECBCE /* SettingViewController.xib in Resources */,
 				3113CB6624A1B39C00286200 /* DownBigFileViewController.xib in Resources */,
 				3144FE5A24A09B3B00DDA87F /* NSURLSessionViewController.xib in Resources */,
+				314DCC1224AB1B9E009AE220 /* liuyife_00006.mp4 in Resources */,
 				3150E91324A8C8C300099AD1 /* VideoCell.xib in Resources */,
+				314DCC1524AB1B9E009AE220 /* liuyife_00002.mp4 in Resources */,
 				3150E93924A8FDA700099AD1 /* NotesViewController.xib in Resources */,
 				31F2F39124A9971C00C1872A /* videos.json in Resources */,
+				314DCC1124AB1B9E009AE220 /* liuyife_00010.mp4 in Resources */,
 				31FFC25E249647020098D769 /* SelfDefineImageClipViewController.xib in Resources */,
+				314DCC0B24AB1B9E009AE220 /* liuyife_00009.mp4 in Resources */,
 				3150F713249B625600C1B624 /* RedrawViewController.xib in Resources */,
 				31FFC2532495E1920098D769 /* RoundImageViewController.xib in Resources */,
 			);
@@ -600,6 +666,7 @@
 				31EBDAA42494729000EECBCE /* main.m in Sources */,
 				31FFC25D249647020098D769 /* SelfDefineImageClipViewController.m in Sources */,
 				319760592494C8EB0030E29E /* MyGirlViewController.m in Sources */,
+				3101B86F24AD9198005D6BC1 /* MultiDetailViewController.m in Sources */,
 				3150F716249B62DE00C1B624 /* RedrawView.m in Sources */,
 				31EBDAAD24947A2800EECBCE /* DrawerViewController.m in Sources */,
 				319760632494CD730030E29E /* MyProgressView.m in Sources */,
@@ -607,6 +674,7 @@
 				3150E90B24A8C75F00099AD1 /* VideoView.m in Sources */,
 				3150F719249BBF7000C1B624 /* GradientViewController.m in Sources */,
 				31EBDA962494728F00EECBCE /* SceneDelegate.m in Sources */,
+				3101B87224ADB2AD005D6BC1 /* MusicView.m in Sources */,
 				3150E92F24A8F6BA00099AD1 /* MineViewController.m in Sources */,
 				3144FE5924A09B3B00DDA87F /* NSURLSessionViewController.m in Sources */,
 				31EBDAB42494AAEA00EECBCE /* SettingViewController.m in Sources */,

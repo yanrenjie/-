@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, strong)NSArray<VideoModel *> *modelArray;
 
+- (void)pausePlay;
+
+- (void)startPlay;
+
 @end
 
 NS_ASSUME_NONNULL_END

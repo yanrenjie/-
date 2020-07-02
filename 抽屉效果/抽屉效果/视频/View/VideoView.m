@@ -65,16 +65,9 @@
     if (self) {
         self.pageIndex = 0;
         self.currentVideoIndex = 0;
-        [self setupUI];
-        
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chanageBgImage) name:@"VideoWillPlayingNotification" object:nil];
+        [self addSubview:self.tableView];
     }
     return self;
-}
-
-
-- (void)setupUI {
-    [self addSubview:self.tableView];
 }
 
 
@@ -87,23 +80,30 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     VideoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VideoCell" forIndexPath:indexPath];
     cell.cellModel = self.modelArray[indexPath.row];
+    __weak typeof(self) weakSelf = self;
+    cell.updatePlayStatus = ^(BOOL status) {
+        if (status) {
+            [weakSelf.playerManager pausePlay];
+        } else {
+            [weakSelf.playerManager startPlay];
+        }
+    };
     return cell;
 }
+
 
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSInteger index = (NSInteger)(scrollView.contentOffset.y / self.tableView.frame.size.height);
     // 判断是否应该切换播放源
     if (index != self.currentVideoIndex) {
-        VideoCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.currentVideoIndex inSection:0]];
-        [cell showBgImageView];
         [self.playerLayer removeFromSuperlayer];
         self.currentVideoIndex = index;
         VideoModel *model = self.modelArray[self.currentVideoIndex];
-        [self.playerManager changeVideoWithURL:[NSURL URLWithString:model.videoURL]];
+        [self.playerManager changeVideoWithURLString:model.videoURL];
+        
         VideoCell *cell1 = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.currentVideoIndex inSection:0]];
-        [cell1 hiddenBgImageView];
-        [cell1.contentView.layer insertSublayer:self.playerLayer atIndex:0];
+        [cell1 addVideoPlayLayerAboveBgImageLayer:self.playerLayer];
     }
 }
 
@@ -112,16 +112,53 @@
     _modelArray = modelArray;
     [self.tableView reloadData];
     VideoCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-    [cell.contentView.layer insertSublayer:self.playerLayer atIndex:0];
     VideoModel *model = self.modelArray.firstObject;
-    [self.playerManager changeVideoWithURL:[NSURL URLWithString:model.videoURL]];
+    [self.playerManager changeVideoWithURLString:model.videoURL];
+    [cell addVideoPlayLayerAboveBgImageLayer:self.playerLayer];
 }
 
-// 隐藏图片
-- (void)chanageBgImage {
-    VideoCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.currentVideoIndex inSection:0]];
-    [cell hiddenBgImageView];
+
+- (void)pausePlay {
+    [self.playerManager pausePlay];
 }
 
+- (void)startPlay {
+    [self.playerManager startPlay];
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    // 1、判断自己是否能响应事件
+    if (self.userInteractionEnabled == NO || self.hidden == YES || self.alpha <= 0.01) {
+        return nil;
+    }
+    
+    // 2、判断点是不是在自己身上
+    if (![self pointInside:point withEvent:event]) {
+        return nil;
+    }
+    
+    // 3、从后往前遍历自己的子控件，把事件传递给子控件，调用子控件的hitTest方法
+    int count = (int)self.subviews.count;
+    for (int i = count - 1; i >= 0; i--) {
+        // 获取子控件
+        UIView *childView = self.subviews[i];
+        
+        // 把当前点的坐标转换为子控件的坐标系
+        CGPoint newPoint = [self convertPoint:point toView:childView];
+        
+        UIView *fitView = [childView hitTest:newPoint withEvent:event];
+        // 如果找到最合适的View，就返回
+        if (fitView) {
+            return fitView;
+        }
+    }
+    
+    // 子控件中都没找到，那就当前控件就是最合适的响应对象
+    return self;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"1111");
+}
 
 @end

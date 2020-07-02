@@ -12,6 +12,8 @@
 
 @interface SmallVideoViewController ()
 
+@property(nonatomic, strong)VideoView *videoView;
+
 @property(nonatomic, strong)UIImageView *imageView;
 
 @property(nonatomic, strong)NSArray *videoModelArray;
@@ -19,6 +21,17 @@
 @end
 
 @implementation SmallVideoViewController
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.videoView pausePlay];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.videoView startPlay];
+}
 
 - (NSArray *)videoModelArray {
     if (!_videoModelArray) {
@@ -41,6 +54,7 @@
     videoView.modelArray = self.videoModelArray;
     videoView.backgroundColor = UIColor.redColor;
     [self.view addSubview:videoView];
+    self.videoView = videoView;
 }
 
 

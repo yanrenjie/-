@@ -16,5 +16,6 @@
 #define SH UIScreen.mainScreen.bounds.size.height
 #define NavH 88
 #define TabH 83
+#define RGBColor(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
 
 #endif /* Complex_pch */

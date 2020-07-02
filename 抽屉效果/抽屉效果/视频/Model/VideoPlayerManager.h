@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)startPlay;
 
-- (void)changeVideoWithURL:(NSURL *)url;
+- (void)changeVideoWithURLString:(NSString *)urlString;
 
 @end
 

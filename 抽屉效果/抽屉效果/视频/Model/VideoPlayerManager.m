@@ -29,8 +29,6 @@
         switch (value) {
             case AVPlayerItemStatusReadyToPlay:
                 [self.player play];
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"VideoWillPlayingNotification" object:nil];
-                NSLog(@"------------------>");
                 break;
             case AVPlayerItemStatusUnknown:
             
@@ -46,8 +44,10 @@
 }
 
 
-- (void)changeVideoWithURL:(NSURL *)url {
+- (void)changeVideoWithURLString:(NSString *)urlString {
     [self pausePlay];
+    NSString *path = [[NSBundle mainBundle] pathForResource:urlString ofType:nil];
+    NSURL *url = [NSURL fileURLWithPath:path];
     AVAsset *asset = [AVAsset assetWithURL:url];
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
     [self.player replaceCurrentItemWithPlayerItem:playerItem];
@@ -67,6 +67,10 @@
 - (void)videoPlayEnd {
     [self.player seekToTime:kCMTimeZero];
     [self startPlay];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 

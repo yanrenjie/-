@@ -12,6 +12,7 @@
 
 @interface VideoCell ()
 
+@property(nonatomic, assign) BOOL playStatus;
 @property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *playImageView;
@@ -30,7 +31,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.playImageView.hidden = YES;
+    self.playImageView.alpha = 0;
+    self.bgImageView.userInteractionEnabled = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -41,6 +43,7 @@
 
 - (void)setCellModel:(VideoModel *)cellModel {
     _cellModel = cellModel;
+    self.playImageView.alpha = 0;
     
     NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
     NSString *filePath = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg", cellModel.videoId]];
@@ -65,22 +68,11 @@
     self.contentLabel.text = _cellModel.content;
 }
 
-- (void)hiddenBgImageView {
-    [UIView animateWithDuration:0.25 animations:^{
-        self.bgImageView.alpha = 0;
-    }];
-}
-
-
-- (void)showBgImageView {
-    self.bgImageView.alpha = 1;
-}
-
-
 // 获取视频第一帧
 - (void)getVideoPreViewImage:(NSString *)urlString {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSURL *url = [NSURL URLWithString:urlString];
+        NSString *path = [[NSBundle mainBundle] pathForResource:urlString ofType:nil];
+        NSURL *url = [NSURL fileURLWithPath:path];
         AVAsset *asset = [AVAsset assetWithURL:url];
         AVAssetImageGenerator *assetGen = [[AVAssetImageGenerator alloc] initWithAsset:asset];
 
@@ -96,12 +88,41 @@
         });
         
         // 缓存图片
-        NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
-        NSString *filePath = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg", self.cellModel.videoId]];
+        NSString *path1 = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
+        NSString *filePath = [path1 stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.jpg", self.cellModel.videoId]];
         NSLog(@"%@", filePath);
         NSData *imageData = UIImageJPEGRepresentation(videoImage, 0.1);
         [imageData writeToFile:filePath atomically:NO];
     });
+}
+
+- (IBAction)likeAction:(UIButton *)sender {
+    
+}
+
+
+- (void)addVideoPlayLayerAboveBgImageLayer:(CALayer *)playLayer {
+    [self.bgImageView.layer insertSublayer:playLayer atIndex:0];
+    self.playStatus = NO;
+}
+
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.playStatus = !self.playStatus;
+    [UIView animateWithDuration:0.5 animations:^{
+        if (self.playStatus) {
+            self.playImageView.alpha = 1;
+            self.playImageView.transform = CGAffineTransformMakeScale(0.5, 0.5);
+        } else {
+            self.playImageView.alpha = 0;
+        }
+    } completion:^(BOOL finished) {
+        if (!self.playStatus) {
+            self.playImageView.transform = CGAffineTransformIdentity;
+        }
+        self.updatePlayStatus(self.playStatus);
+    }];
 }
 
 @end

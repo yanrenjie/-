@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
+typedef void(^UpdatePlayStatus)(BOOL);
+
 @class VideoModel;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -15,9 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, strong)VideoModel *cellModel;
 
-- (void)hiddenBgImageView;
+@property(nonatomic, copy)UpdatePlayStatus updatePlayStatus;
 
-- (void)showBgImageView;
+- (void)addVideoPlayLayerAboveBgImageLayer:(CALayer *)playLayer;
 
 @end
 

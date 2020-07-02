@@ -7,7 +7,6 @@
 //
 
 #import "MultiViewController.h"
-
 @interface MultiViewController ()<UICollectionViewDataSource>
 
 @property(nonatomic, strong)UICollectionView *collectionView;
@@ -20,7 +19,7 @@
 
 - (NSArray *)vcNameArray {
     if (!_vcNameArray) {
-        _vcNameArray = @[@"RoundImageViewController" , @"RoundImageViewController", @"RoundImageViewController", @"ClockViewController", @"RoundImageViewController"];
+        _vcNameArray = @[@"ClockViewController" , @"RoundImageViewController", @"RoundImageViewController", @"ClockViewController", @"RoundImageViewController"];
     }
     return _vcNameArray;
 }
