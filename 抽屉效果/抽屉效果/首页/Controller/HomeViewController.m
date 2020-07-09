@@ -8,7 +8,11 @@
 
 #import "HomeViewController.h"
 
-@interface HomeViewController ()
+@interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property(nonatomic, strong)UITableView *tableView;
+@property(nonatomic, strong)NSArray *titleArray;
+
 
 @end
 
@@ -16,17 +20,73 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self.view addSubview:self.tableView];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSArray *)titleArray {
+    if (!_titleArray) {
+        _titleArray = @[
+            @[
+                @{
+                    @"title" : @"获取系统相册内容自定义展示",
+                    @"vcname" : @"PhotoLibraryViewController"
+                }
+            ]
+        ];
+    }
+    return _titleArray;
 }
-*/
+
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SW, SH) style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.rowHeight = 60;
+        [_tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"UITableViewCell"];
+        [self.view addSubview:_tableView];
+    }
+    return _tableView;
+}
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.titleArray.count;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSArray *array = self.titleArray[section];
+    return array.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    NSArray *array = self.titleArray[indexPath.section];
+    NSDictionary *dict = array[indexPath.row];
+    cell.textLabel.text = dict[@"title"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSArray *array = self.titleArray[indexPath.section];
+    NSDictionary *dict = array[indexPath.row];
+    NSString *vcname = dict[@"vcname"];
+    Class name = NSClassFromString(vcname);
+    UIViewController *vc = (UIViewController *)[name new];
+    if (indexPath.section == 0) {
+        [self presentViewController:vc animated:YES completion:nil];
+    } else {
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+
 
 @end

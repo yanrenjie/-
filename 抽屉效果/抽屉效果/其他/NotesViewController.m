@@ -11,7 +11,6 @@
 @interface NotesViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic, strong)NSArray *titleArray;
-
 @end
 
 @implementation NotesViewController
@@ -83,6 +82,10 @@
                 @{
                     @"title" : @"小视频",
                     @"vcname" : @"SmallVideoViewController"
+                },
+                @{
+                    @"title" : @"AVCapture的简单使用",
+                    @"vcname" : @"AVCaptureViewController"
                 }
             ]
         ];
@@ -126,7 +129,9 @@
     NSDictionary *dict = array[indexPath.row];
     NSString *vcname = dict[@"vcname"];
     Class name = NSClassFromString(vcname);
-    [self.navigationController pushViewController:[name new] animated:YES];
+    UIViewController *vc = (UIViewController *)[name new];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

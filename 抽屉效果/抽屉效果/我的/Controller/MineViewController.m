@@ -8,8 +8,13 @@
 
 #import "MineViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface MineViewController ()
+@interface MineViewController ()<CBPeripheralManagerDelegate>
+
+@property(nonatomic, strong)AVCaptureSession *session;
+@property(nonatomic, strong)CBPeripheralManager *manager;
+@property(nonatomic, strong)dispatch_queue_t queue;
 
 @end
 
@@ -17,23 +22,74 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200fb10000bq79p37m1hfat4s36r1g&ratio=720p&line=0
-    AVPlayerItem *item = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:@"https://v3-tt.ixigua.com/6ace2026a588457e3ba3aec16e9aac41/5ef9cd0f/video/tos/cn/tos-cn-ve-15/d5df9d1f7e2242659492e7803f3c1b7d/?a=1768&br=3708&bt=1236&cr=0&cs=0&dr=0&ds=3&er=0&l=20200629181407010022027028070A800E&lr=default&mime_type=video_mp4&qs=0&rc=M2Q8N2c2NXl3dTMzaWkzM0ApNzs4ZzZmaTxoNzRmZ2g5M2dxa141L3NxbW5fLS0xLS9zc2EzMWItNl9hM2IwNjIyYTE6Yw%3D%3D&vl=&vr="]];
-    AVPlayer *player = [AVPlayer playerWithPlayerItem:item];
-    AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:player];
-    layer.frame = self.view.bounds;
-    [self.view.layer addSublayer:layer];
-    [player play];
+    
+    self.queue = dispatch_queue_create("com.jackey.yan", DISPATCH_QUEUE_CONCURRENT);
+    CBPeripheralManager *manager = [[CBPeripheralManager alloc] initWithDelegate:self queue:self.queue];
+    self.manager = manager;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral {
+    /**
+     CBManagerStateUnknown = 0,
+     CBManagerStateResetting,
+     CBManagerStateUnsupported,
+     CBManagerStateUnauthorized,
+     CBManagerStatePoweredOff,
+     CBManagerStatePoweredOn,
+     */
+    switch (peripheral.state) {
+        case CBManagerStateUnknown:
+            NSLog(@"CBManagerStateUnknown");
+            break;
+            
+        case CBManagerStateResetting:
+        NSLog(@"CBManagerStateResetting");
+        break;
+            
+        case CBManagerStateUnsupported:
+        NSLog(@"CBManagerStateUnsupported");
+        break;
+            
+        case CBManagerStateUnauthorized:
+        NSLog(@"CBManagerStateUnauthorized");
+        break;
+            
+        case CBManagerStatePoweredOff:
+        NSLog(@"CBManagerStatePoweredOff");
+        break;
+            
+        case CBManagerStatePoweredOn:
+        NSLog(@"CBManagerStatePoweredOn");
+        break;
+            
+        default:
+            break;
+    }
 }
-*/
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    //语音播报
+
+//    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"床前明月光，疑是地上霜。"];
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"hello, how`s the weather like today? Let`s go to swimming, how do you think"];
+    
+    utterance.pitchMultiplier = 0.8;
+
+    //中式发音
+
+//    AVSpeechSynthesisVoice *voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"zh-CN"];
+
+    //英式发音
+
+    AVSpeechSynthesisVoice *voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-GB"];
+    utterance.voice = voice;
+
+    NSLog(@"%@",[AVSpeechSynthesisVoice speechVoices]);
+
+    AVSpeechSynthesizer *synth = [[AVSpeechSynthesizer alloc] init];
+
+    [synth speakUtterance:utterance];
+}
 
 @end

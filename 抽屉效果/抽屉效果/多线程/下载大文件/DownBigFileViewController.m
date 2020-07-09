@@ -10,6 +10,8 @@
 #import "MyProgressView.h"
 #import <AVFoundation/AVFoundation.h>
 
+#define MovieName @"movie.mp4"
+
 @interface DownBigFileViewController ()<NSURLSessionDataDelegate>
 @property (weak, nonatomic) IBOutlet MyProgressView *progressView;
 
@@ -38,7 +40,9 @@
 
 - (NSURLSessionDataTask *)dataTask {
     if (!_dataTask) {
-        NSURL *url = [NSURL URLWithString:@"http://vfx.mtime.cn/Video/2019/03/21/mp4/190321153853126488.mp4"];
+        // http://vfx.mtime.cn/Video/2019/03/21/mp4/190321153853126488.mp4
+        //
+        NSURL *url = [NSURL URLWithString:@"https://videos.collectionofbestporn.com/videos/5/b/2/0/e/5b20eefc1d1aa_2.mp4?validfrom=1594265943&validto=1594273143&rate=280k&burst=1000k&hash=vxMf586bjZwNNpVWqgWUl4APbwg%3D"];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         // 设置请求范围
         /**
@@ -63,7 +67,7 @@
     
     
     NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
-    NSString *filePath = [path stringByAppendingPathComponent:@"love4.mp4"];
+    NSString *filePath = [path stringByAppendingPathComponent:MovieName];
     NSDictionary *dict = [[NSFileManager defaultManager] attributesOfItemAtPath:filePath error:nil];
     self.currentSize = [dict fileSize];
     
@@ -85,7 +89,7 @@
     // [response suggestedFilename]， 获取URL最后一个节点的名称，作为文件名
     // 创建文件路径
     NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
-    NSString *filePath = [path stringByAppendingPathComponent:@"love4.mp4"];
+    NSString *filePath = [path stringByAppendingPathComponent:MovieName];
     NSLog(@"%@", filePath);
     // 根据路径创建文件
     if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
@@ -160,7 +164,7 @@
 //    [newData appendData:data2];
 //    [newData writeToFile:[path stringByAppendingPathComponent:@"love3.mp4"] atomically:YES];
     
-    NSURL *url = [NSURL fileURLWithPath:[path stringByAppendingPathComponent:@"love4.mp4"]];
+    NSURL *url = [NSURL fileURLWithPath:[path stringByAppendingPathComponent:MovieName]];
 //    NSURL *url1 = [NSURL URLWithDataRepresentation:newData relativeToURL:url];
 //    NSURL *url = [NSURL fileURLWithPath:filePath];
     AVPlayerItem *item = [[AVPlayerItem alloc] initWithURL:url];

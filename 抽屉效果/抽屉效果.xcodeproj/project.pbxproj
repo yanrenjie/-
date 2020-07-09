@@ -60,6 +60,8 @@
 		319760632494CD730030E29E /* MyProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 319760622494CD730030E29E /* MyProgressView.m */; };
 		31C5D5DD249C684C009B5ECE /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C5D5DB249C684C009B5ECE /* ThreadViewController.m */; };
 		31C5D5DE249C684C009B5ECE /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C5D5DC249C684C009B5ECE /* ThreadViewController.xib */; };
+		31DD07AE24B78B13004AD82B /* PhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DD07AC24B78B13004AD82B /* PhotoListCell.m */; };
+		31DD07AF24B78B13004AD82B /* PhotoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DD07AD24B78B13004AD82B /* PhotoListCell.xib */; };
 		31EBDA932494728F00EECBCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDA922494728F00EECBCE /* AppDelegate.m */; };
 		31EBDA962494728F00EECBCE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDA952494728F00EECBCE /* SceneDelegate.m */; };
 		31EBDA9C2494728F00EECBCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EBDA9A2494728F00EECBCE /* Main.storyboard */; };
@@ -71,10 +73,19 @@
 		31EBDAB52494AAEA00EECBCE /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EBDAB32494AAEA00EECBCE /* SettingViewController.xib */; };
 		31EE10D424A369D200E15D94 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE10D324A369D200E15D94 /* NSDictionary+Log.m */; };
 		31EE10D724A36A2000E15D94 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE10D624A36A2000E15D94 /* NSArray+Log.m */; };
+		31EF687E24AF222E001BBB11 /* AnnotaionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EF687D24AF222E001BBB11 /* AnnotaionModel.m */; };
 		31F2F38C24A989A900C1872A /* VideoPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F2F38B24A989A900C1872A /* VideoPlayerManager.m */; };
 		31F2F38F24A9914F00C1872A /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F2F38E24A9914F00C1872A /* VideoModel.m */; };
 		31F2F39124A9971C00C1872A /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 31F2F39024A9971C00C1872A /* videos.json */; };
 		31F897D024A478420089DBA5 /* NSString+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F897CF24A478420089DBA5 /* NSString+extension.m */; };
+		31FE9F4D24B705DC00C48E47 /* AVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FE9F4C24B705DC00C48E47 /* AVCaptureViewController.m */; };
+		31FE9F5024B706E800C48E47 /* PhotoLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FE9F4F24B706E800C48E47 /* PhotoLibraryViewController.m */; };
+		31FE9F5D24B7274A00C48E47 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FE9F5B24B7274A00C48E47 /* PhotoCell.m */; };
+		31FE9F5E24B7274A00C48E47 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FE9F5C24B7274A00C48E47 /* PhotoCell.xib */; };
+		31FE9F6124B7401000C48E47 /* PhotoNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FE9F6024B7401000C48E47 /* PhotoNavigationView.m */; };
+		31FE9F6424B7401D00C48E47 /* PhotoTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FE9F6324B7401D00C48E47 /* PhotoTabView.m */; };
+		31FE9F6624B7402C00C48E47 /* PhotoNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FE9F6524B7402C00C48E47 /* PhotoNavigationView.xib */; };
+		31FE9F6824B7403A00C48E47 /* PhotoTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FE9F6724B7403A00C48E47 /* PhotoTabView.xib */; };
 		31FFC2522495E1920098D769 /* RoundImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FFC2502495E1920098D769 /* RoundImageViewController.m */; };
 		31FFC2532495E1920098D769 /* RoundImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FFC2512495E1920098D769 /* RoundImageViewController.xib */; };
 		31FFC25D249647020098D769 /* SelfDefineImageClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FFC25A249647020098D769 /* SelfDefineImageClipViewController.m */; };
@@ -163,6 +174,9 @@
 		31C5D5DA249C684C009B5ECE /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		31C5D5DB249C684C009B5ECE /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		31C5D5DC249C684C009B5ECE /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
+		31DD07AB24B78B13004AD82B /* PhotoListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoListCell.h; sourceTree = "<group>"; };
+		31DD07AC24B78B13004AD82B /* PhotoListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoListCell.m; sourceTree = "<group>"; };
+		31DD07AD24B78B13004AD82B /* PhotoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoListCell.xib; sourceTree = "<group>"; };
 		31EBDA8E2494728F00EECBCE /* 抽屉效果.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "抽屉效果.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EBDA912494728F00EECBCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31EBDA922494728F00EECBCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -182,6 +196,8 @@
 		31EE10D324A369D200E15D94 /* NSDictionary+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
 		31EE10D524A36A2000E15D94 /* NSArray+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		31EE10D624A36A2000E15D94 /* NSArray+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		31EF687C24AF222E001BBB11 /* AnnotaionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnotaionModel.h; sourceTree = "<group>"; };
+		31EF687D24AF222E001BBB11 /* AnnotaionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnotaionModel.m; sourceTree = "<group>"; };
 		31F2F38A24A989A900C1872A /* VideoPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerManager.h; sourceTree = "<group>"; };
 		31F2F38B24A989A900C1872A /* VideoPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerManager.m; sourceTree = "<group>"; };
 		31F2F38D24A9914F00C1872A /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
@@ -189,6 +205,19 @@
 		31F2F39024A9971C00C1872A /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 		31F897CE24A478420089DBA5 /* NSString+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+extension.h"; sourceTree = "<group>"; };
 		31F897CF24A478420089DBA5 /* NSString+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+extension.m"; sourceTree = "<group>"; };
+		31FE9F4B24B705DC00C48E47 /* AVCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVCaptureViewController.h; sourceTree = "<group>"; };
+		31FE9F4C24B705DC00C48E47 /* AVCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCaptureViewController.m; sourceTree = "<group>"; };
+		31FE9F4E24B706E800C48E47 /* PhotoLibraryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoLibraryViewController.h; sourceTree = "<group>"; };
+		31FE9F4F24B706E800C48E47 /* PhotoLibraryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoLibraryViewController.m; sourceTree = "<group>"; };
+		31FE9F5A24B7274A00C48E47 /* PhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		31FE9F5B24B7274A00C48E47 /* PhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		31FE9F5C24B7274A00C48E47 /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		31FE9F5F24B7401000C48E47 /* PhotoNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoNavigationView.h; sourceTree = "<group>"; };
+		31FE9F6024B7401000C48E47 /* PhotoNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoNavigationView.m; sourceTree = "<group>"; };
+		31FE9F6224B7401D00C48E47 /* PhotoTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoTabView.h; sourceTree = "<group>"; };
+		31FE9F6324B7401D00C48E47 /* PhotoTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoTabView.m; sourceTree = "<group>"; };
+		31FE9F6524B7402C00C48E47 /* PhotoNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoNavigationView.xib; sourceTree = "<group>"; };
+		31FE9F6724B7403A00C48E47 /* PhotoTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTabView.xib; sourceTree = "<group>"; };
 		31FFC24F2495E1920098D769 /* RoundImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundImageViewController.h; sourceTree = "<group>"; };
 		31FFC2502495E1920098D769 /* RoundImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundImageViewController.m; sourceTree = "<group>"; };
 		31FFC2512495E1920098D769 /* RoundImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundImageViewController.xib; sourceTree = "<group>"; };
@@ -289,6 +318,8 @@
 		3150E91924A8F60400099AD1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				31EF687C24AF222E001BBB11 /* AnnotaionModel.h */,
+				31EF687D24AF222E001BBB11 /* AnnotaionModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,6 +360,10 @@
 				3150E90424A8A26600099AD1 /* SmallVideoViewController.h */,
 				3150E90524A8A26600099AD1 /* SmallVideoViewController.m */,
 				3150E90624A8A26600099AD1 /* SmallVideoViewController.xib */,
+				31FE9F4B24B705DC00C48E47 /* AVCaptureViewController.h */,
+				31FE9F4C24B705DC00C48E47 /* AVCaptureViewController.m */,
+				31FE9F4E24B706E800C48E47 /* PhotoLibraryViewController.h */,
+				31FE9F4F24B706E800C48E47 /* PhotoLibraryViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -354,6 +389,18 @@
 				3150E91124A8C8C300099AD1 /* VideoCell.xib */,
 				3101B87024ADB2AD005D6BC1 /* MusicView.h */,
 				3101B87124ADB2AD005D6BC1 /* MusicView.m */,
+				31FE9F5A24B7274A00C48E47 /* PhotoCell.h */,
+				31FE9F5B24B7274A00C48E47 /* PhotoCell.m */,
+				31FE9F5C24B7274A00C48E47 /* PhotoCell.xib */,
+				31FE9F5F24B7401000C48E47 /* PhotoNavigationView.h */,
+				31FE9F6024B7401000C48E47 /* PhotoNavigationView.m */,
+				31FE9F6524B7402C00C48E47 /* PhotoNavigationView.xib */,
+				31FE9F6224B7401D00C48E47 /* PhotoTabView.h */,
+				31FE9F6324B7401D00C48E47 /* PhotoTabView.m */,
+				31FE9F6724B7403A00C48E47 /* PhotoTabView.xib */,
+				31DD07AB24B78B13004AD82B /* PhotoListCell.h */,
+				31DD07AC24B78B13004AD82B /* PhotoListCell.m */,
+				31DD07AD24B78B13004AD82B /* PhotoListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,21 +509,8 @@
 				3197605B2494CD3C0030E29E /* 进度条 */,
 				3197605A2494CD1B0030E29E /* 头部缩放 */,
 				31EBDAAA249479FD00EECBCE /* 抽屉效果 */,
-				31EBDA912494728F00EECBCE /* AppDelegate.h */,
-				31EBDA922494728F00EECBCE /* AppDelegate.m */,
-				31EBDA942494728F00EECBCE /* SceneDelegate.h */,
-				31EBDA952494728F00EECBCE /* SceneDelegate.m */,
-				3150E93524A8FDA700099AD1 /* NotesViewController.h */,
-				3150E93624A8FDA700099AD1 /* NotesViewController.m */,
-				3150E93724A8FDA700099AD1 /* NotesViewController.xib */,
-				3150E93024A8FA2200099AD1 /* JieTabBarController.h */,
-				3150E93124A8FA2200099AD1 /* JieTabBarController.m */,
+				31FE9F5924B7266600C48E47 /* 其他 */,
 				3150F720249BDDD400C1B624 /* Complex.pch */,
-				31F2F39024A9971C00C1872A /* videos.json */,
-				3144FE5B24A0EB5C00DDA87F /* school.json */,
-				3144FE6024A1242500DDA87F /* school.xml */,
-				3144FE5D24A0F81600DDA87F /* SchoolModel.h */,
-				3144FE5E24A0F81600DDA87F /* SchoolModel.m */,
 				31EBDA9A2494728F00EECBCE /* Main.storyboard */,
 				31EBDA9D2494729000EECBCE /* Assets.xcassets */,
 				31EBDA9F2494729000EECBCE /* LaunchScreen.storyboard */,
@@ -511,6 +545,27 @@
 				31F897CF24A478420089DBA5 /* NSString+extension.m */,
 			);
 			path = "分类";
+			sourceTree = "<group>";
+		};
+		31FE9F5924B7266600C48E47 /* 其他 */ = {
+			isa = PBXGroup;
+			children = (
+				31EBDA912494728F00EECBCE /* AppDelegate.h */,
+				31EBDA922494728F00EECBCE /* AppDelegate.m */,
+				31EBDA942494728F00EECBCE /* SceneDelegate.h */,
+				31EBDA952494728F00EECBCE /* SceneDelegate.m */,
+				3150E93524A8FDA700099AD1 /* NotesViewController.h */,
+				3150E93624A8FDA700099AD1 /* NotesViewController.m */,
+				3150E93724A8FDA700099AD1 /* NotesViewController.xib */,
+				3150E93024A8FA2200099AD1 /* JieTabBarController.h */,
+				3150E93124A8FA2200099AD1 /* JieTabBarController.m */,
+				31F2F39024A9971C00C1872A /* videos.json */,
+				3144FE5B24A0EB5C00DDA87F /* school.json */,
+				3144FE6024A1242500DDA87F /* school.xml */,
+				3144FE5D24A0F81600DDA87F /* SchoolModel.h */,
+				3144FE5E24A0F81600DDA87F /* SchoolModel.m */,
+			);
+			path = "其他";
 			sourceTree = "<group>";
 		};
 		31FFC24E2495DF630098D769 /* 绘制圆角图片 */ = {
@@ -612,7 +667,9 @@
 				314DCC0C24AB1B9E009AE220 /* liuyife_00008.mp4 in Resources */,
 				3144FE6124A1242500DDA87F /* school.xml in Resources */,
 				314DCC1624AB1B9E009AE220 /* liuyife_00001.mp4 in Resources */,
+				31FE9F5E24B7274A00C48E47 /* PhotoCell.xib in Resources */,
 				314DCC0F24AB1B9E009AE220 /* liuyife_00005.mp4 in Resources */,
+				31DD07AF24B78B13004AD82B /* PhotoListCell.xib in Resources */,
 				31C5D5DE249C684C009B5ECE /* ThreadViewController.xib in Resources */,
 				314DCC0D24AB1B9E009AE220 /* liuyife_00012.mp4 in Resources */,
 				319760602494CD5A0030E29E /* MyProgressViewController.xib in Resources */,
@@ -632,6 +689,8 @@
 				3113CB6624A1B39C00286200 /* DownBigFileViewController.xib in Resources */,
 				3144FE5A24A09B3B00DDA87F /* NSURLSessionViewController.xib in Resources */,
 				314DCC1224AB1B9E009AE220 /* liuyife_00006.mp4 in Resources */,
+				31FE9F6824B7403A00C48E47 /* PhotoTabView.xib in Resources */,
+				31FE9F6624B7402C00C48E47 /* PhotoNavigationView.xib in Resources */,
 				3150E91324A8C8C300099AD1 /* VideoCell.xib in Resources */,
 				314DCC1524AB1B9E009AE220 /* liuyife_00002.mp4 in Resources */,
 				3150E93924A8FDA700099AD1 /* NotesViewController.xib in Resources */,
@@ -670,19 +729,26 @@
 				3150F716249B62DE00C1B624 /* RedrawView.m in Sources */,
 				31EBDAAD24947A2800EECBCE /* DrawerViewController.m in Sources */,
 				319760632494CD730030E29E /* MyProgressView.m in Sources */,
+				31FE9F4D24B705DC00C48E47 /* AVCaptureViewController.m in Sources */,
 				3150F712249B625600C1B624 /* RedrawViewController.m in Sources */,
+				31FE9F6124B7401000C48E47 /* PhotoNavigationView.m in Sources */,
+				31DD07AE24B78B13004AD82B /* PhotoListCell.m in Sources */,
 				3150E90B24A8C75F00099AD1 /* VideoView.m in Sources */,
 				3150F719249BBF7000C1B624 /* GradientViewController.m in Sources */,
 				31EBDA962494728F00EECBCE /* SceneDelegate.m in Sources */,
 				3101B87224ADB2AD005D6BC1 /* MusicView.m in Sources */,
+				31FE9F5024B706E800C48E47 /* PhotoLibraryViewController.m in Sources */,
 				3150E92F24A8F6BA00099AD1 /* MineViewController.m in Sources */,
 				3144FE5924A09B3B00DDA87F /* NSURLSessionViewController.m in Sources */,
 				31EBDAB42494AAEA00EECBCE /* SettingViewController.m in Sources */,
+				31EF687E24AF222E001BBB11 /* AnnotaionModel.m in Sources */,
 				3174E2062498857200C71CA9 /* ClockViewController.m in Sources */,
 				31F2F38C24A989A900C1872A /* VideoPlayerManager.m in Sources */,
 				3150E92624A8F67200099AD1 /* HomeViewController.m in Sources */,
 				314A028D2497269700B0C397 /* GraffitiBoardView.m in Sources */,
 				31F2F38F24A9914F00C1872A /* VideoModel.m in Sources */,
+				31FE9F6424B7401D00C48E47 /* PhotoTabView.m in Sources */,
+				31FE9F5D24B7274A00C48E47 /* PhotoCell.m in Sources */,
 				31FFC2522495E1920098D769 /* RoundImageViewController.m in Sources */,
 				31EE10D424A369D200E15D94 /* NSDictionary+Log.m in Sources */,
 				3150E90724A8A26600099AD1 /* SmallVideoViewController.m in Sources */,

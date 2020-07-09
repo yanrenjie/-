@@ -1,8 +1,8 @@
 //
-//  MusicView.h
+//  PhotoCell.h
 //  抽屉效果
 //
-//  Created by 颜仁浩 on 2020/7/2.
+//  Created by 颜仁浩 on 2020/7/9.
 //  Copyright © 2020 Jackey. All rights reserved.
 //
 
@@ -10,11 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MusicView : UIView
+@interface PhotoCell : UICollectionViewCell
 
-- (void)beginAnimations;
-
-- (void)pauseAnimations;
+- (void)setImageWithImage:(UIImage *)image;
 
 @end
 

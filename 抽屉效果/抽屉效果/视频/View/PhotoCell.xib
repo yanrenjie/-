@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="178"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rwy-IX-uBq">
+                        <rect key="frame" x="0.0" y="0.0" width="115" height="178"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRw-qP-16P">
+                        <rect key="frame" x="70" y="15" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Pz9-J6-Vmf"/>
+                            <constraint firstAttribute="width" constant="30" id="YsB-jY-H24"/>
+                        </constraints>
+                        <state key="normal" image="circle"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="TRw-qP-16P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="B32-15-ZbZ"/>
+                <constraint firstAttribute="trailing" secondItem="TRw-qP-16P" secondAttribute="trailing" constant="15" id="PtY-h6-n4T"/>
+                <constraint firstAttribute="bottom" secondItem="rwy-IX-uBq" secondAttribute="bottom" id="W4n-9T-13A"/>
+                <constraint firstAttribute="trailing" secondItem="rwy-IX-uBq" secondAttribute="trailing" id="XVi-2M-dBq"/>
+                <constraint firstItem="rwy-IX-uBq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kG8-dq-QXr"/>
+                <constraint firstItem="rwy-IX-uBq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ljB-Rl-4dI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="115" height="178"/>
+            <connections>
+                <outlet property="myImageView" destination="rwy-IX-uBq" id="1eu-9B-NiN"/>
+            </connections>
+            <point key="canvasLocation" x="184.78260869565219" y="179.46428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="circle" width="20" height="20"/>
+    </resources>
+</document>
