@@ -22,6 +22,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.contentView.backgroundColor = RGBColor(30, 30, 30);
     self.cellImageView.contentMode = UIViewContentModeScaleAspectFill;
 }
 
