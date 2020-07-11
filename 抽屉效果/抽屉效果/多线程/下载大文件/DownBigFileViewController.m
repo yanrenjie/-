@@ -40,9 +40,7 @@
 
 - (NSURLSessionDataTask *)dataTask {
     if (!_dataTask) {
-        // http://vfx.mtime.cn/Video/2019/03/21/mp4/190321153853126488.mp4
-        //
-        NSURL *url = [NSURL URLWithString:@"https://videos.collectionofbestporn.com/videos/5/b/2/0/e/5b20eefc1d1aa_2.mp4?validfrom=1594265943&validto=1594273143&rate=280k&burst=1000k&hash=vxMf586bjZwNNpVWqgWUl4APbwg%3D"];
+        NSURL *url = [NSURL URLWithString:@"http://vfx.mtime.cn/Video/2019/03/19/mp4/190319212559089721.mp4"];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         // 设置请求范围
         /**

@@ -3,12 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3101B86F24AD9198005D6BC1 /* MultiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3101B86E24AD9198005D6BC1 /* MultiDetailViewController.m */; };
 		3101B87224ADB2AD005D6BC1 /* MusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3101B87124ADB2AD005D6BC1 /* MusicView.m */; };
+		3108029524B84708005DF636 /* CommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3108029424B84708005DF636 /* CommentView.m */; };
+		3108029724B8471C005DF636 /* CommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3108029624B8471C005DF636 /* CommentView.xib */; };
+		3108029B24B850EF005DF636 /* CommonInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3108029A24B850EF005DF636 /* CommonInputView.m */; };
+		3108029D24B85103005DF636 /* CommonInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3108029C24B85103005DF636 /* CommonInputView.xib */; };
+		310802A024B85DC5005DF636 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3108029F24B85DC5005DF636 /* NewsDetailViewController.m */; };
 		3113CB6524A1B39C00286200 /* DownBigFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3113CB6324A1B39C00286200 /* DownBigFileViewController.m */; };
 		3113CB6624A1B39C00286200 /* DownBigFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3113CB6424A1B39C00286200 /* DownBigFileViewController.xib */; };
 		3144FE5424A05CA400DDA87F /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144FE5224A05CA400DDA87F /* RunLoopViewController.m */; };
@@ -51,6 +56,12 @@
 		3150F716249B62DE00C1B624 /* RedrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150F715249B62DE00C1B624 /* RedrawView.m */; };
 		3150F719249BBF7000C1B624 /* GradientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150F718249BBF7000C1B624 /* GradientViewController.m */; };
 		3150F71E249BD87D00C1B624 /* MultiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3150F71C249BD87D00C1B624 /* MultiViewController.m */; };
+		315A7FB124B99341004CE615 /* UIImage+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 315A7FB024B99341004CE615 /* UIImage+extension.m */; };
+		315A7FB424B997C0004CE615 /* UIColor+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 315A7FB324B997C0004CE615 /* UIColor+extension.m */; };
+		315A7FB724B99C00004CE615 /* DarkModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315A7FB624B99C00004CE615 /* DarkModeViewController.m */; };
+		315A7FB924B9AF3C004CE615 /* circle.json in Resources */ = {isa = PBXBuildFile; fileRef = 315A7FB824B9AF3B004CE615 /* circle.json */; };
+		315A7FC124B9B6E9004CE615 /* CircelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 315A7FC024B9B6E9004CE615 /* CircelCell.m */; };
+		315A7FC424B9D474004CE615 /* CircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 315A7FC324B9D474004CE615 /* CircleModel.m */; };
 		3174E2062498857200C71CA9 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3174E2042498857200C71CA9 /* ClockViewController.m */; };
 		3174E2072498857200C71CA9 /* ClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3174E2052498857200C71CA9 /* ClockViewController.xib */; };
 		319760562494BECE0030E29E /* MyFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319760552494BECE0030E29E /* MyFileViewController.m */; };
@@ -90,6 +101,7 @@
 		31FFC2532495E1920098D769 /* RoundImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FFC2512495E1920098D769 /* RoundImageViewController.xib */; };
 		31FFC25D249647020098D769 /* SelfDefineImageClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FFC25A249647020098D769 /* SelfDefineImageClipViewController.m */; };
 		31FFC25E249647020098D769 /* SelfDefineImageClipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FFC25C249647020098D769 /* SelfDefineImageClipViewController.xib */; };
+		41366D4B50793B57912723A7 /* libPods-抽屉效果.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1649CDEF4DC2D964464088 /* libPods-抽屉效果.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +109,15 @@
 		3101B86E24AD9198005D6BC1 /* MultiDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiDetailViewController.m; sourceTree = "<group>"; };
 		3101B87024ADB2AD005D6BC1 /* MusicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicView.h; sourceTree = "<group>"; };
 		3101B87124ADB2AD005D6BC1 /* MusicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicView.m; sourceTree = "<group>"; };
+		3108029324B84708005DF636 /* CommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentView.h; sourceTree = "<group>"; };
+		3108029424B84708005DF636 /* CommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentView.m; sourceTree = "<group>"; };
+		3108029624B8471C005DF636 /* CommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentView.xib; sourceTree = "<group>"; };
+		3108029824B84DC8005DF636 /* EnumFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumFile.h; sourceTree = "<group>"; };
+		3108029924B850EF005DF636 /* CommonInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonInputView.h; sourceTree = "<group>"; };
+		3108029A24B850EF005DF636 /* CommonInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonInputView.m; sourceTree = "<group>"; };
+		3108029C24B85103005DF636 /* CommonInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonInputView.xib; sourceTree = "<group>"; };
+		3108029E24B85DC5005DF636 /* NewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
+		3108029F24B85DC5005DF636 /* NewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 		3113CB6224A1B39C00286200 /* DownBigFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownBigFileViewController.h; sourceTree = "<group>"; };
 		3113CB6324A1B39C00286200 /* DownBigFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownBigFileViewController.m; sourceTree = "<group>"; };
 		3113CB6424A1B39C00286200 /* DownBigFileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownBigFileViewController.xib; sourceTree = "<group>"; };
@@ -159,6 +180,17 @@
 		3150F71B249BD87D00C1B624 /* MultiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiViewController.h; sourceTree = "<group>"; };
 		3150F71C249BD87D00C1B624 /* MultiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiViewController.m; sourceTree = "<group>"; };
 		3150F720249BDDD400C1B624 /* Complex.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Complex.pch; sourceTree = "<group>"; };
+		315A7FAF24B99341004CE615 /* UIImage+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+extension.h"; sourceTree = "<group>"; };
+		315A7FB024B99341004CE615 /* UIImage+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+extension.m"; sourceTree = "<group>"; };
+		315A7FB224B997C0004CE615 /* UIColor+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+extension.h"; sourceTree = "<group>"; };
+		315A7FB324B997C0004CE615 /* UIColor+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extension.m"; sourceTree = "<group>"; };
+		315A7FB524B99C00004CE615 /* DarkModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DarkModeViewController.h; sourceTree = "<group>"; };
+		315A7FB624B99C00004CE615 /* DarkModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DarkModeViewController.m; sourceTree = "<group>"; };
+		315A7FB824B9AF3B004CE615 /* circle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = circle.json; sourceTree = "<group>"; };
+		315A7FBF24B9B6E9004CE615 /* CircelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircelCell.h; sourceTree = "<group>"; };
+		315A7FC024B9B6E9004CE615 /* CircelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircelCell.m; sourceTree = "<group>"; };
+		315A7FC224B9D474004CE615 /* CircleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleModel.h; sourceTree = "<group>"; };
+		315A7FC324B9D474004CE615 /* CircleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleModel.m; sourceTree = "<group>"; };
 		3174E2032498857200C71CA9 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		3174E2042498857200C71CA9 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		3174E2052498857200C71CA9 /* ClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockViewController.xib; sourceTree = "<group>"; };
@@ -224,6 +256,9 @@
 		31FFC25A249647020098D769 /* SelfDefineImageClipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfDefineImageClipViewController.m; sourceTree = "<group>"; };
 		31FFC25B249647020098D769 /* SelfDefineImageClipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfDefineImageClipViewController.h; sourceTree = "<group>"; };
 		31FFC25C249647020098D769 /* SelfDefineImageClipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelfDefineImageClipViewController.xib; sourceTree = "<group>"; };
+		5159D53D4FC1994ED7458D0D /* Pods-抽屉效果.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-抽屉效果.release.xcconfig"; path = "Target Support Files/Pods-抽屉效果/Pods-抽屉效果.release.xcconfig"; sourceTree = "<group>"; };
+		A0D502412ED7C677F64FDDDC /* Pods-抽屉效果.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-抽屉效果.debug.xcconfig"; path = "Target Support Files/Pods-抽屉效果/Pods-抽屉效果.debug.xcconfig"; sourceTree = "<group>"; };
+		DA1649CDEF4DC2D964464088 /* libPods-抽屉效果.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-抽屉效果.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41366D4B50793B57912723A7 /* libPods-抽屉效果.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +446,10 @@
 			children = (
 				3150E92424A8F67200099AD1 /* HomeViewController.h */,
 				3150E92524A8F67200099AD1 /* HomeViewController.m */,
+				3108029E24B85DC5005DF636 /* NewsDetailViewController.h */,
+				3108029F24B85DC5005DF636 /* NewsDetailViewController.m */,
+				315A7FB524B99C00004CE615 /* DarkModeViewController.h */,
+				315A7FB624B99C00004CE615 /* DarkModeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -417,6 +457,8 @@
 		3150E92224A8F61E00099AD1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				315A7FC224B9D474004CE615 /* CircleModel.h */,
+				315A7FC324B9D474004CE615 /* CircleModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -424,6 +466,14 @@
 		3150E92324A8F61E00099AD1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3108029324B84708005DF636 /* CommentView.h */,
+				3108029424B84708005DF636 /* CommentView.m */,
+				3108029624B8471C005DF636 /* CommentView.xib */,
+				3108029924B850EF005DF636 /* CommonInputView.h */,
+				3108029A24B850EF005DF636 /* CommonInputView.m */,
+				3108029C24B85103005DF636 /* CommonInputView.xib */,
+				315A7FBF24B9B6E9004CE615 /* CircelCell.h */,
+				315A7FC024B9B6E9004CE615 /* CircelCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -482,6 +532,8 @@
 			children = (
 				31EBDA902494728F00EECBCE /* 抽屉效果 */,
 				31EBDA8F2494728F00EECBCE /* Products */,
+				B1F3C17F93326440324BD44F /* Pods */,
+				FA87A5112AED6F5AD8CA5F77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -543,6 +595,10 @@
 				31EE10D624A36A2000E15D94 /* NSArray+Log.m */,
 				31F897CE24A478420089DBA5 /* NSString+extension.h */,
 				31F897CF24A478420089DBA5 /* NSString+extension.m */,
+				315A7FAF24B99341004CE615 /* UIImage+extension.h */,
+				315A7FB024B99341004CE615 /* UIImage+extension.m */,
+				315A7FB224B997C0004CE615 /* UIColor+extension.h */,
+				315A7FB324B997C0004CE615 /* UIColor+extension.m */,
 			);
 			path = "分类";
 			sourceTree = "<group>";
@@ -562,8 +618,10 @@
 				31F2F39024A9971C00C1872A /* videos.json */,
 				3144FE5B24A0EB5C00DDA87F /* school.json */,
 				3144FE6024A1242500DDA87F /* school.xml */,
+				315A7FB824B9AF3B004CE615 /* circle.json */,
 				3144FE5D24A0F81600DDA87F /* SchoolModel.h */,
 				3144FE5E24A0F81600DDA87F /* SchoolModel.m */,
+				3108029824B84DC8005DF636 /* EnumFile.h */,
 			);
 			path = "其他";
 			sourceTree = "<group>";
@@ -606,6 +664,23 @@
 			path = CALayer;
 			sourceTree = "<group>";
 		};
+		B1F3C17F93326440324BD44F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0D502412ED7C677F64FDDDC /* Pods-抽屉效果.debug.xcconfig */,
+				5159D53D4FC1994ED7458D0D /* Pods-抽屉效果.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA87A5112AED6F5AD8CA5F77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA1649CDEF4DC2D964464088 /* libPods-抽屉效果.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -613,9 +688,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31EBDAA72494729000EECBCE /* Build configuration list for PBXNativeTarget "抽屉效果" */;
 			buildPhases = (
+				50576569EB3F846B3692CAA1 /* [CP] Check Pods Manifest.lock */,
 				31EBDA8A2494728F00EECBCE /* Sources */,
 				31EBDA8B2494728F00EECBCE /* Frameworks */,
 				31EBDA8C2494728F00EECBCE /* Resources */,
+				E30FC9F3492ED1D5BEC31A31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -666,6 +743,7 @@
 				3144FE5C24A0EB5C00DDA87F /* school.json in Resources */,
 				314DCC0C24AB1B9E009AE220 /* liuyife_00008.mp4 in Resources */,
 				3144FE6124A1242500DDA87F /* school.xml in Resources */,
+				3108029D24B85103005DF636 /* CommonInputView.xib in Resources */,
 				314DCC1624AB1B9E009AE220 /* liuyife_00001.mp4 in Resources */,
 				31FE9F5E24B7274A00C48E47 /* PhotoCell.xib in Resources */,
 				314DCC0F24AB1B9E009AE220 /* liuyife_00005.mp4 in Resources */,
@@ -681,6 +759,7 @@
 				3174E2072498857200C71CA9 /* ClockViewController.xib in Resources */,
 				31EBDA9E2494729000EECBCE /* Assets.xcassets in Resources */,
 				314DCC1024AB1B9E009AE220 /* liuyife_00004.mp4 in Resources */,
+				3108029724B8471C005DF636 /* CommentView.xib in Resources */,
 				3144FE5524A05CA400DDA87F /* RunLoopViewController.xib in Resources */,
 				314A028A2497263900B0C397 /* GraffitiBoardViewController.xib in Resources */,
 				3150E90824A8A26600099AD1 /* SmallVideoViewController.xib in Resources */,
@@ -698,12 +777,55 @@
 				314DCC1124AB1B9E009AE220 /* liuyife_00010.mp4 in Resources */,
 				31FFC25E249647020098D769 /* SelfDefineImageClipViewController.xib in Resources */,
 				314DCC0B24AB1B9E009AE220 /* liuyife_00009.mp4 in Resources */,
+				315A7FB924B9AF3C004CE615 /* circle.json in Resources */,
 				3150F713249B625600C1B624 /* RedrawViewController.xib in Resources */,
 				31FFC2532495E1920098D769 /* RoundImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50576569EB3F846B3692CAA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-抽屉效果-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E30FC9F3492ED1D5BEC31A31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-抽屉效果/Pods-抽屉效果-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-抽屉效果/Pods-抽屉效果-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-抽屉效果/Pods-抽屉效果-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31EBDA8A2494728F00EECBCE /* Sources */ = {
@@ -714,10 +836,12 @@
 				3150E93224A8FA2200099AD1 /* JieTabBarController.m in Sources */,
 				31C5D5DD249C684C009B5ECE /* ThreadViewController.m in Sources */,
 				3150E92C24A8F6A800099AD1 /* SameCityViewController.m in Sources */,
+				315A7FC124B9B6E9004CE615 /* CircelCell.m in Sources */,
 				3144FE5F24A0F81600DDA87F /* SchoolModel.m in Sources */,
 				319760562494BECE0030E29E /* MyFileViewController.m in Sources */,
 				31EBDA932494728F00EECBCE /* AppDelegate.m in Sources */,
 				3150E93824A8FDA700099AD1 /* NotesViewController.m in Sources */,
+				310802A024B85DC5005DF636 /* NewsDetailViewController.m in Sources */,
 				3197605F2494CD5A0030E29E /* MyProgressViewController.m in Sources */,
 				31F897D024A478420089DBA5 /* NSString+extension.m in Sources */,
 				3150E91224A8C8C300099AD1 /* VideoCell.m in Sources */,
@@ -725,17 +849,22 @@
 				31EBDAA42494729000EECBCE /* main.m in Sources */,
 				31FFC25D249647020098D769 /* SelfDefineImageClipViewController.m in Sources */,
 				319760592494C8EB0030E29E /* MyGirlViewController.m in Sources */,
+				3108029524B84708005DF636 /* CommentView.m in Sources */,
+				3108029B24B850EF005DF636 /* CommonInputView.m in Sources */,
 				3101B86F24AD9198005D6BC1 /* MultiDetailViewController.m in Sources */,
 				3150F716249B62DE00C1B624 /* RedrawView.m in Sources */,
 				31EBDAAD24947A2800EECBCE /* DrawerViewController.m in Sources */,
 				319760632494CD730030E29E /* MyProgressView.m in Sources */,
+				315A7FB424B997C0004CE615 /* UIColor+extension.m in Sources */,
 				31FE9F4D24B705DC00C48E47 /* AVCaptureViewController.m in Sources */,
 				3150F712249B625600C1B624 /* RedrawViewController.m in Sources */,
 				31FE9F6124B7401000C48E47 /* PhotoNavigationView.m in Sources */,
+				315A7FC424B9D474004CE615 /* CircleModel.m in Sources */,
 				31DD07AE24B78B13004AD82B /* PhotoListCell.m in Sources */,
 				3150E90B24A8C75F00099AD1 /* VideoView.m in Sources */,
 				3150F719249BBF7000C1B624 /* GradientViewController.m in Sources */,
 				31EBDA962494728F00EECBCE /* SceneDelegate.m in Sources */,
+				315A7FB124B99341004CE615 /* UIImage+extension.m in Sources */,
 				3101B87224ADB2AD005D6BC1 /* MusicView.m in Sources */,
 				31FE9F5024B706E800C48E47 /* PhotoLibraryViewController.m in Sources */,
 				3150E92F24A8F6BA00099AD1 /* MineViewController.m in Sources */,
@@ -750,6 +879,7 @@
 				31FE9F6424B7401D00C48E47 /* PhotoTabView.m in Sources */,
 				31FE9F5D24B7274A00C48E47 /* PhotoCell.m in Sources */,
 				31FFC2522495E1920098D769 /* RoundImageViewController.m in Sources */,
+				315A7FB724B99C00004CE615 /* DarkModeViewController.m in Sources */,
 				31EE10D424A369D200E15D94 /* NSDictionary+Log.m in Sources */,
 				3150E90724A8A26600099AD1 /* SmallVideoViewController.m in Sources */,
 				3144FE5424A05CA400DDA87F /* RunLoopViewController.m in Sources */,
@@ -893,6 +1023,7 @@
 		};
 		31EBDAA82494729000EECBCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D502412ED7C677F64FDDDC /* Pods-抽屉效果.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -911,6 +1042,7 @@
 		};
 		31EBDAA92494729000EECBCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5159D53D4FC1994ED7458D0D /* Pods-抽屉效果.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -27,12 +27,18 @@
 - (NSArray *)titleArray {
     if (!_titleArray) {
         _titleArray = @[
-            @[
-                @{
-                    @"title" : @"获取系统相册内容自定义展示",
-                    @"vcname" : @"PhotoLibraryViewController"
-                }
-            ]
+            @{
+                @"title" : @"获取系统相册内容自定义展示",
+                @"vcname" : @"PhotoLibraryViewController"
+            },
+            @{
+                @"title" : @"新闻详情页评论框改变",
+                @"vcname" : @"NewsDetailViewController"
+            },
+            @{
+                @"title" : @"仿微信朋友圈暗黑模式适配",
+                @"vcname" : @"DarkModeViewController"
+            }
         ];
     }
     return _titleArray;
@@ -52,21 +58,14 @@
 }
 
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.titleArray.count;
-}
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSArray *array = self.titleArray[section];
-    return array.count;
+    return self.titleArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-    NSArray *array = self.titleArray[indexPath.section];
-    NSDictionary *dict = array[indexPath.row];
+    NSDictionary *dict = self.titleArray[indexPath.row];
     cell.textLabel.text = dict[@"title"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -75,12 +74,11 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSArray *array = self.titleArray[indexPath.section];
-    NSDictionary *dict = array[indexPath.row];
+    NSDictionary *dict = self.titleArray[indexPath.row];
     NSString *vcname = dict[@"vcname"];
     Class name = NSClassFromString(vcname);
     UIViewController *vc = (UIViewController *)[name new];
-    if (indexPath.section == 0) {
+    if (indexPath.row == 0) {
         [self presentViewController:vc animated:YES completion:nil];
     } else {
         vc.hidesBottomBarWhenPushed = YES;

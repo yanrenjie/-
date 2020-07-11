@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)base64StringToString;
 
+
+- (CGSize)computeTextSizeWithOriginSize:(CGSize)originSize fontSize:(CGFloat)fontSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

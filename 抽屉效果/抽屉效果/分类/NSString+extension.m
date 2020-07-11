@@ -21,4 +21,13 @@
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
+
+- (CGSize)computeTextSizeWithOriginSize:(CGSize)originSize fontSize:(CGFloat)fontSize {
+    UIFont *font = [UIFont systemFontOfSize:fontSize];
+    NSDictionary *dict = @{
+        NSFontAttributeName : font
+    };
+    return [self boundingRectWithSize:originSize options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil].size;
+}
+
 @end
