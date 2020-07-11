@@ -27,7 +27,7 @@
     // 先获取点赞字符串
     NSString *temp = @"";
     if (model.likes.count != 0) {
-        temp = @"❤️ ";
+        temp = @" ❤️ ";
         for (NSString *string in model.likes) {
             if ([string isEqualToString:model.likes.lastObject]) {
                 temp = [temp stringByAppendingFormat:@"%@", string];
@@ -41,7 +41,7 @@
         // 计算点赞的人所占的高度
         CGSize originSize1 = CGSizeMake(SW - defaultCircleAvertWidth - defaultCircleMargin * 3, MAXFLOAT);
         CGSize size1 = [model.likePersonString computeTextSizeWithOriginSize:originSize1 fontSize:14];
-        model.likePersonHeight = size1.height == 0 ? 0 : size1.height;
+        model.likePersonHeight = size1.height == 0 ? 0 : size1.height + 20;
     }
     
     CGFloat minHeight = defaultCircleMargin * 9 + 3 * defaultCircleMargin;

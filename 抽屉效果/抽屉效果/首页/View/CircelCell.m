@@ -128,6 +128,10 @@
 - (UILabel *)likePersonLabel {
     if (!_likePersonLabel) {
         _likePersonLabel = [[UILabel alloc] init];
+        _likePersonLabel.layer.cornerRadius = 5;
+        _likePersonLabel.layer.masksToBounds = YES;
+        _likePersonLabel.numberOfLines = 0;
+        _likePersonLabel.backgroundColor = [UIColor adaptDarkModeWithColor:RGBColor(247, 247, 247) darkColor:RGBColor(47, 47, 47)];
         _likePersonLabel.textColor = [UIColor adaptDarkModeWithColor:RGBColor(120, 134, 154) darkColor:RGBColor(104, 119, 154)];
         _likePersonLabel.font = [UIFont systemFontOfSize:14];
         [self.contentView addSubview:_likePersonLabel];
@@ -222,6 +226,7 @@
         make.right.offset(-defaultCircleMargin);
         make.top.equalTo(weakSelf.commonButton.mas_bottom).offset(defaultCircleMargin);
         make.bottom.offset(-20);
+        make.height.mas_equalTo(20);
     }];
     
     [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -251,6 +256,10 @@
         } else {
             obj.hidden = NO;
         }
+    }];
+    
+    [self.likePersonLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(cellModel.likePersonHeight);
     }];
 }
 
