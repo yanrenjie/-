@@ -15,7 +15,7 @@
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wB7-Uc-ykc">
                     <rect key="frame" x="15" y="15" width="338" height="88"/>
-                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -108,6 +108,13 @@
                         <action selector="buttonClickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ytv-Ql-nUx"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRm-gr-kec">
+                    <rect key="frame" x="0.0" y="0.0" width="417" height="7"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="3VZ-Lu-OLf"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -124,6 +131,8 @@
                 <constraint firstItem="kAa-um-EVi" firstAttribute="centerY" secondItem="ds6-nm-2S2" secondAttribute="centerY" id="WQ5-0t-yMI"/>
                 <constraint firstItem="kBr-g4-dNH" firstAttribute="leading" secondItem="kAa-um-EVi" secondAttribute="trailing" constant="30" id="YwK-w9-oJs"/>
                 <constraint firstItem="ds6-nm-2S2" firstAttribute="leading" secondItem="47h-QS-isb" secondAttribute="trailing" constant="8" id="bUJ-gL-RqX"/>
+                <constraint firstAttribute="trailing" secondItem="RRm-gr-kec" secondAttribute="trailing" id="egu-i8-5yj"/>
+                <constraint firstItem="RRm-gr-kec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fKb-Fy-ir2"/>
                 <constraint firstItem="47h-QS-isb" firstAttribute="top" secondItem="wB7-Uc-ykc" secondAttribute="bottom" constant="15" id="irp-JQ-RJa"/>
                 <constraint firstAttribute="bottom" secondItem="47h-QS-isb" secondAttribute="bottom" constant="15" id="kzb-Z6-BiW"/>
                 <constraint firstItem="RxR-2x-5wH" firstAttribute="leading" secondItem="wB7-Uc-ykc" secondAttribute="trailing" constant="15" id="lFv-CW-vqI"/>

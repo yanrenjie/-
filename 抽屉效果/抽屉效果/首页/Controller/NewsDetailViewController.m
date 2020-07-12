@@ -52,19 +52,32 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = UIColor.whiteColor;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardShow:) name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardHidden:) name:UIKeyboardWillHideNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardTypeChanged:) name:UIKeyboardWillChangeFrameNotification object:nil];
     self.commonTabView.frame = CGRectMake(0, SH - TabH, SW, TabH);
     self.commonInputView.frame = CGRectMake(0, SH, SW, 155);
 }
 
 
-- (void)keyboardShow:(NSNotification *)notification {
-    NSLog(@"----------   %@", notification.userInfo);
+- (void)keyboardTypeChanged:(NSNotification *)notification {
+    NSValue *value = notification.userInfo[UIKeyboardFrameEndUserInfoKey];
+    NSNumber *time = notification.userInfo[UIKeyboardAnimationDurationUserInfoKey];
+    CGRect rect = value.CGRectValue;
+    CGFloat duration = time.floatValue;
+    CGPoint originP = rect.origin;
+    [UIView animateWithDuration:duration animations:^{
+        CGRect frame = self.commonInputView.frame;
+        if (originP.y == SH) {
+            frame.origin.y = SH;
+            self.commonInputView.frame = frame;
+        } else {
+            self.commonInputView.frame = CGRectMake(0, originP.y - frame.size.height, SW, frame.size.height);
+        }
+    }];
 }
 
-- (void)keyboardHidden:(NSNotification *)notification {
-    NSLog(@"+++++++++++   %@", notification.userInfo);
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.commonInputView inputViewIsFirstResponder:NO];
 }
 
 - (void)dealloc {
