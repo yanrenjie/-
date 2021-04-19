@@ -17,6 +17,7 @@
 #import "UIImage+extension.h"
 #import "UIColor+extension.h"
 #import "NSString+extension.h"
+#import <SVProgressHUD.h>
 
 #define weak(obj) __weak typeof(obj) weakSelf = obj;
 #define strong(obj) typeof(obj) strongSelf = obj;

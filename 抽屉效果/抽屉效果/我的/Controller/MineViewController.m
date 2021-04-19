@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
-@interface MineViewController ()<CBPeripheralManagerDelegate>
+@interface MineViewController ()<CBPeripheralManagerDelegate, AVAssetResourceLoaderDelegate>
 
 @property(nonatomic, strong)AVCaptureSession *session;
 @property(nonatomic, strong)CBPeripheralManager *manager;
@@ -23,9 +23,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.queue = dispatch_queue_create("com.jackey.yan", DISPATCH_QUEUE_CONCURRENT);
-    CBPeripheralManager *manager = [[CBPeripheralManager alloc] initWithDelegate:self queue:self.queue];
-    self.manager = manager;
+//    self.queue = dispatch_queue_create("com.jackey.yan", DISPATCH_QUEUE_CONCURRENT);
+//    CBPeripheralManager *manager = [[CBPeripheralManager alloc] initWithDelegate:self queue:self.queue];
+//    self.manager = manager;
+    
+    //  streaming://aweme.snssdk.com/aweme/v1/play/?video_id=v0200ff70000bck86n4mavf9lsqsr7m0&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0
+    NSString *string = @"streaming://aweme.snssdk.com/aweme/v1/play/?video_id=v0200ff70000bck86n4mavf9lsqsr7m0&line=0&ratio=720p&media_type=4&vr_type=0&test_cdn=None&improve_bitrate=0";
+    NSURL *url = [NSURL URLWithString:string];
+    AVURLAsset *urlAsset = [AVURLAsset URLAssetWithURL:url options:nil];
+    [urlAsset.resourceLoader setDelegate:self queue:dispatch_get_main_queue()];
+    AVPlayerItem *item = [AVPlayerItem playerItemWithAsset:urlAsset];
+    AVPlayer *player = [AVPlayer playerWithPlayerItem:item];
+    AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:player];
+    layer.frame = self.view.bounds;
+    [self.view.layer addSublayer:layer];
+    [player play];
+}
+
+- (BOOL)resourceLoader:(AVAssetResourceLoader *)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest *)loadingRequest {
+    NSLog(@"2222=== === = = =     %@", [loadingRequest.request URL].absoluteString);
+    return YES;
 }
 
 

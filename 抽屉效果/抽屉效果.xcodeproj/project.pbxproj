@@ -64,6 +64,12 @@
 		315A7FC424B9D474004CE615 /* CircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 315A7FC324B9D474004CE615 /* CircleModel.m */; };
 		3174E2062498857200C71CA9 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3174E2042498857200C71CA9 /* ClockViewController.m */; };
 		3174E2072498857200C71CA9 /* ClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3174E2052498857200C71CA9 /* ClockViewController.xib */; };
+		3180CD24262C202400E51B58 /* ChatTextSendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180CD23262C202400E51B58 /* ChatTextSendCell.m */; };
+		3180CD29262C49F600E51B58 /* ChatTextReciveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180CD28262C49F600E51B58 /* ChatTextReciveCell.m */; };
+		3180CD2D262C4B2A00E51B58 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180CD2C262C4B2A00E51B58 /* MessageModel.m */; };
+		318141DB262D428D006C1EA0 /* ChatKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 318141DA262D428D006C1EA0 /* ChatKeyboardView.m */; };
+		318D1BB226285D00005545B4 /* WechatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D1BB126285D00005545B4 /* WechatDetailViewController.m */; };
+		318D1BB626286AD8005545B4 /* WechatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D1BB526286AD8005545B4 /* WechatView.m */; };
 		319760562494BECE0030E29E /* MyFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319760552494BECE0030E29E /* MyFileViewController.m */; };
 		319760592494C8EB0030E29E /* MyGirlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319760582494C8EB0030E29E /* MyGirlViewController.m */; };
 		3197605F2494CD5A0030E29E /* MyProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3197605D2494CD5A0030E29E /* MyProgressViewController.m */; };
@@ -73,6 +79,8 @@
 		31C5D5DE249C684C009B5ECE /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C5D5DC249C684C009B5ECE /* ThreadViewController.xib */; };
 		31DD07AE24B78B13004AD82B /* PhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DD07AC24B78B13004AD82B /* PhotoListCell.m */; };
 		31DD07AF24B78B13004AD82B /* PhotoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DD07AD24B78B13004AD82B /* PhotoListCell.xib */; };
+		31DD9B7D24E5210500297493 /* JieCustomePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DD9B7B24E5210500297493 /* JieCustomePhotoViewController.m */; };
+		31DD9B7E24E5210500297493 /* JieCustomePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31DD9B7C24E5210500297493 /* JieCustomePhotoViewController.xib */; };
 		31EBDA932494728F00EECBCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDA922494728F00EECBCE /* AppDelegate.m */; };
 		31EBDA962494728F00EECBCE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EBDA952494728F00EECBCE /* SceneDelegate.m */; };
 		31EBDA9C2494728F00EECBCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EBDA9A2494728F00EECBCE /* Main.storyboard */; };
@@ -88,6 +96,8 @@
 		31F2F38C24A989A900C1872A /* VideoPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F2F38B24A989A900C1872A /* VideoPlayerManager.m */; };
 		31F2F38F24A9914F00C1872A /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F2F38E24A9914F00C1872A /* VideoModel.m */; };
 		31F2F39124A9971C00C1872A /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 31F2F39024A9971C00C1872A /* videos.json */; };
+		31F514D724BD549A005FD8E6 /* JieAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F514D624BD549A005FD8E6 /* JieAnimationTransition.m */; };
+		31F514DA24BD5A68005FD8E6 /* JieAnitionTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F514D924BD5A68005FD8E6 /* JieAnitionTransitionViewController.m */; };
 		31F897D024A478420089DBA5 /* NSString+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F897CF24A478420089DBA5 /* NSString+extension.m */; };
 		31FE9F4D24B705DC00C48E47 /* AVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FE9F4C24B705DC00C48E47 /* AVCaptureViewController.m */; };
 		31FE9F5024B706E800C48E47 /* PhotoLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FE9F4F24B706E800C48E47 /* PhotoLibraryViewController.m */; };
@@ -194,6 +204,18 @@
 		3174E2032498857200C71CA9 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		3174E2042498857200C71CA9 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		3174E2052498857200C71CA9 /* ClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockViewController.xib; sourceTree = "<group>"; };
+		3180CD22262C202400E51B58 /* ChatTextSendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatTextSendCell.h; sourceTree = "<group>"; };
+		3180CD23262C202400E51B58 /* ChatTextSendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatTextSendCell.m; sourceTree = "<group>"; };
+		3180CD27262C49F600E51B58 /* ChatTextReciveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatTextReciveCell.h; sourceTree = "<group>"; };
+		3180CD28262C49F600E51B58 /* ChatTextReciveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatTextReciveCell.m; sourceTree = "<group>"; };
+		3180CD2B262C4B2A00E51B58 /* MessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		3180CD2C262C4B2A00E51B58 /* MessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
+		318141D9262D428D006C1EA0 /* ChatKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatKeyboardView.h; sourceTree = "<group>"; };
+		318141DA262D428D006C1EA0 /* ChatKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatKeyboardView.m; sourceTree = "<group>"; };
+		318D1BB026285CFF005545B4 /* WechatDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatDetailViewController.h; sourceTree = "<group>"; };
+		318D1BB126285D00005545B4 /* WechatDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WechatDetailViewController.m; sourceTree = "<group>"; };
+		318D1BB426286AD8005545B4 /* WechatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatView.h; sourceTree = "<group>"; };
+		318D1BB526286AD8005545B4 /* WechatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WechatView.m; sourceTree = "<group>"; };
 		319760542494BECE0030E29E /* MyFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFileViewController.h; sourceTree = "<group>"; };
 		319760552494BECE0030E29E /* MyFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFileViewController.m; sourceTree = "<group>"; };
 		319760572494C8EB0030E29E /* MyGirlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyGirlViewController.h; sourceTree = "<group>"; };
@@ -209,6 +231,9 @@
 		31DD07AB24B78B13004AD82B /* PhotoListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoListCell.h; sourceTree = "<group>"; };
 		31DD07AC24B78B13004AD82B /* PhotoListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoListCell.m; sourceTree = "<group>"; };
 		31DD07AD24B78B13004AD82B /* PhotoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoListCell.xib; sourceTree = "<group>"; };
+		31DD9B7A24E5210500297493 /* JieCustomePhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JieCustomePhotoViewController.h; sourceTree = "<group>"; };
+		31DD9B7B24E5210500297493 /* JieCustomePhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JieCustomePhotoViewController.m; sourceTree = "<group>"; };
+		31DD9B7C24E5210500297493 /* JieCustomePhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JieCustomePhotoViewController.xib; sourceTree = "<group>"; };
 		31EBDA8E2494728F00EECBCE /* 抽屉效果.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "抽屉效果.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EBDA912494728F00EECBCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		31EBDA922494728F00EECBCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -235,6 +260,10 @@
 		31F2F38D24A9914F00C1872A /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
 		31F2F38E24A9914F00C1872A /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		31F2F39024A9971C00C1872A /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
+		31F514D524BD549A005FD8E6 /* JieAnimationTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JieAnimationTransition.h; sourceTree = "<group>"; };
+		31F514D624BD549A005FD8E6 /* JieAnimationTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JieAnimationTransition.m; sourceTree = "<group>"; };
+		31F514D824BD5A68005FD8E6 /* JieAnitionTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JieAnitionTransitionViewController.h; sourceTree = "<group>"; };
+		31F514D924BD5A68005FD8E6 /* JieAnitionTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JieAnitionTransitionViewController.m; sourceTree = "<group>"; };
 		31F897CE24A478420089DBA5 /* NSString+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+extension.h"; sourceTree = "<group>"; };
 		31F897CF24A478420089DBA5 /* NSString+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+extension.m"; sourceTree = "<group>"; };
 		31FE9F4B24B705DC00C48E47 /* AVCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVCaptureViewController.h; sourceTree = "<group>"; };
@@ -450,6 +479,10 @@
 				3108029F24B85DC5005DF636 /* NewsDetailViewController.m */,
 				315A7FB524B99C00004CE615 /* DarkModeViewController.h */,
 				315A7FB624B99C00004CE615 /* DarkModeViewController.m */,
+				31F514D824BD5A68005FD8E6 /* JieAnitionTransitionViewController.h */,
+				31F514D924BD5A68005FD8E6 /* JieAnitionTransitionViewController.m */,
+				318D1BB026285CFF005545B4 /* WechatDetailViewController.h */,
+				318D1BB126285D00005545B4 /* WechatDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -459,6 +492,8 @@
 			children = (
 				315A7FC224B9D474004CE615 /* CircleModel.h */,
 				315A7FC324B9D474004CE615 /* CircleModel.m */,
+				3180CD2B262C4B2A00E51B58 /* MessageModel.h */,
+				3180CD2C262C4B2A00E51B58 /* MessageModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -474,6 +509,14 @@
 				3108029C24B85103005DF636 /* CommonInputView.xib */,
 				315A7FBF24B9B6E9004CE615 /* CircelCell.h */,
 				315A7FC024B9B6E9004CE615 /* CircelCell.m */,
+				318D1BB426286AD8005545B4 /* WechatView.h */,
+				318D1BB526286AD8005545B4 /* WechatView.m */,
+				3180CD22262C202400E51B58 /* ChatTextSendCell.h */,
+				3180CD23262C202400E51B58 /* ChatTextSendCell.m */,
+				3180CD27262C49F600E51B58 /* ChatTextReciveCell.h */,
+				3180CD28262C49F600E51B58 /* ChatTextReciveCell.m */,
+				318141D9262D428D006C1EA0 /* ChatKeyboardView.h */,
+				318141DA262D428D006C1EA0 /* ChatKeyboardView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -575,6 +618,7 @@
 		31EBDAAA249479FD00EECBCE /* 抽屉效果 */ = {
 			isa = PBXGroup;
 			children = (
+				31F514D424BD5454005FD8E6 /* 自定义转场动画 */,
 				31EBDAAB24947A2800EECBCE /* DrawerViewController.h */,
 				31EBDAAC24947A2800EECBCE /* DrawerViewController.m */,
 				31EBDAB12494AAEA00EECBCE /* SettingViewController.h */,
@@ -601,6 +645,15 @@
 				315A7FB324B997C0004CE615 /* UIColor+extension.m */,
 			);
 			path = "分类";
+			sourceTree = "<group>";
+		};
+		31F514D424BD5454005FD8E6 /* 自定义转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				31F514D524BD549A005FD8E6 /* JieAnimationTransition.h */,
+				31F514D624BD549A005FD8E6 /* JieAnimationTransition.m */,
+			);
+			path = "自定义转场动画";
 			sourceTree = "<group>";
 		};
 		31FE9F5924B7266600C48E47 /* 其他 */ = {
@@ -648,6 +701,9 @@
 				3150F711249B625600C1B624 /* RedrawViewController.xib */,
 				3150F714249B62DE00C1B624 /* RedrawView.h */,
 				3150F715249B62DE00C1B624 /* RedrawView.m */,
+				31DD9B7A24E5210500297493 /* JieCustomePhotoViewController.h */,
+				31DD9B7B24E5210500297493 /* JieCustomePhotoViewController.m */,
+				31DD9B7C24E5210500297493 /* JieCustomePhotoViewController.xib */,
 			);
 			path = "绘制圆角图片";
 			sourceTree = "<group>";
@@ -746,6 +802,7 @@
 				3108029D24B85103005DF636 /* CommonInputView.xib in Resources */,
 				314DCC1624AB1B9E009AE220 /* liuyife_00001.mp4 in Resources */,
 				31FE9F5E24B7274A00C48E47 /* PhotoCell.xib in Resources */,
+				31DD9B7E24E5210500297493 /* JieCustomePhotoViewController.xib in Resources */,
 				314DCC0F24AB1B9E009AE220 /* liuyife_00005.mp4 in Resources */,
 				31DD07AF24B78B13004AD82B /* PhotoListCell.xib in Resources */,
 				31C5D5DE249C684C009B5ECE /* ThreadViewController.xib in Resources */,
@@ -835,6 +892,7 @@
 				31EE10D724A36A2000E15D94 /* NSArray+Log.m in Sources */,
 				3150E93224A8FA2200099AD1 /* JieTabBarController.m in Sources */,
 				31C5D5DD249C684C009B5ECE /* ThreadViewController.m in Sources */,
+				31F514DA24BD5A68005FD8E6 /* JieAnitionTransitionViewController.m in Sources */,
 				3150E92C24A8F6A800099AD1 /* SameCityViewController.m in Sources */,
 				315A7FC124B9B6E9004CE615 /* CircelCell.m in Sources */,
 				3144FE5F24A0F81600DDA87F /* SchoolModel.m in Sources */,
@@ -843,7 +901,11 @@
 				3150E93824A8FDA700099AD1 /* NotesViewController.m in Sources */,
 				310802A024B85DC5005DF636 /* NewsDetailViewController.m in Sources */,
 				3197605F2494CD5A0030E29E /* MyProgressViewController.m in Sources */,
+				3180CD29262C49F600E51B58 /* ChatTextReciveCell.m in Sources */,
 				31F897D024A478420089DBA5 /* NSString+extension.m in Sources */,
+				318141DB262D428D006C1EA0 /* ChatKeyboardView.m in Sources */,
+				318D1BB626286AD8005545B4 /* WechatView.m in Sources */,
+				31DD9B7D24E5210500297493 /* JieCustomePhotoViewController.m in Sources */,
 				3150E91224A8C8C300099AD1 /* VideoCell.m in Sources */,
 				3113CB6524A1B39C00286200 /* DownBigFileViewController.m in Sources */,
 				31EBDAA42494729000EECBCE /* main.m in Sources */,
@@ -863,6 +925,7 @@
 				31DD07AE24B78B13004AD82B /* PhotoListCell.m in Sources */,
 				3150E90B24A8C75F00099AD1 /* VideoView.m in Sources */,
 				3150F719249BBF7000C1B624 /* GradientViewController.m in Sources */,
+				3180CD24262C202400E51B58 /* ChatTextSendCell.m in Sources */,
 				31EBDA962494728F00EECBCE /* SceneDelegate.m in Sources */,
 				315A7FB124B99341004CE615 /* UIImage+extension.m in Sources */,
 				3101B87224ADB2AD005D6BC1 /* MusicView.m in Sources */,
@@ -871,15 +934,18 @@
 				3144FE5924A09B3B00DDA87F /* NSURLSessionViewController.m in Sources */,
 				31EBDAB42494AAEA00EECBCE /* SettingViewController.m in Sources */,
 				31EF687E24AF222E001BBB11 /* AnnotaionModel.m in Sources */,
+				31F514D724BD549A005FD8E6 /* JieAnimationTransition.m in Sources */,
 				3174E2062498857200C71CA9 /* ClockViewController.m in Sources */,
 				31F2F38C24A989A900C1872A /* VideoPlayerManager.m in Sources */,
 				3150E92624A8F67200099AD1 /* HomeViewController.m in Sources */,
 				314A028D2497269700B0C397 /* GraffitiBoardView.m in Sources */,
 				31F2F38F24A9914F00C1872A /* VideoModel.m in Sources */,
+				318D1BB226285D00005545B4 /* WechatDetailViewController.m in Sources */,
 				31FE9F6424B7401D00C48E47 /* PhotoTabView.m in Sources */,
 				31FE9F5D24B7274A00C48E47 /* PhotoCell.m in Sources */,
 				31FFC2522495E1920098D769 /* RoundImageViewController.m in Sources */,
 				315A7FB724B99C00004CE615 /* DarkModeViewController.m in Sources */,
+				3180CD2D262C4B2A00E51B58 /* MessageModel.m in Sources */,
 				31EE10D424A369D200E15D94 /* NSDictionary+Log.m in Sources */,
 				3150E90724A8A26600099AD1 /* SmallVideoViewController.m in Sources */,
 				3144FE5424A05CA400DDA87F /* RunLoopViewController.m in Sources */,

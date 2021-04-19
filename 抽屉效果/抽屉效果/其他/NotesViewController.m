@@ -86,6 +86,10 @@
                 @{
                     @"title" : @"AVCapture的简单使用",
                     @"vcname" : @"AVCaptureViewController"
+                },
+                @{
+                    @"title" : @"保存图片到相册和自定义相册",
+                    @"vcname" : @"JieCustomePhotoViewController"
                 }
             ]
         ];

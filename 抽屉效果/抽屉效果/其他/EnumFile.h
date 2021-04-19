@@ -31,4 +31,18 @@ typedef enum : NSUInteger {
 } CommonInputType;
 
 
+// 消息类型：文本，图片，视频，广告
+typedef enum : NSUInteger {
+    MessageType_Text,
+    MessageType_Image,
+    MessageType_Video,
+    MessageType_ADs
+} MessageType;
+
+// 消息方向：接受消息，发送消息
+typedef enum : NSUInteger {
+    MessageDerection_Send,
+    MessageDerection_Recive
+} MessageDerection;
+
 #endif /* EnumFile_h */

@@ -44,7 +44,6 @@
         _tableView.estimatedRowHeight = 120;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView registerClass:CircelCell.class forCellReuseIdentifier:@"CircelCell"];
-        [self.view addSubview:_tableView];
     }
     return _tableView;
 }

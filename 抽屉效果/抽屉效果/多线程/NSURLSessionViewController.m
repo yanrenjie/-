@@ -38,7 +38,8 @@
 
 // NSURLSesstion使用步骤
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self postMethod];
+//    [self postMethod];
+    [self getMethod];
 }
 
 
