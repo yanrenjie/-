@@ -14,7 +14,7 @@
 #import "ChatKeyboardView.h"
 
 
-@interface WechatDetailViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface WechatDetailViewController ()<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
 
 @property(nonatomic, strong)UITableView *chatTableView;
 @property(nonatomic, strong)NSMutableArray *messageModelArray;
@@ -29,7 +29,6 @@
         _chatTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, NavH, SW, SH - NavH - TabH) style:UITableViewStylePlain];
         _chatTableView.delegate = self;
         _chatTableView.dataSource = self;
-        _chatTableView.showsVerticalScrollIndicator = NO;
         _chatTableView.backgroundColor = RGBColor(237, 237, 237);
         _chatTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_chatTableView registerClass:[ChatTextSendCell class] forCellReuseIdentifier:@"ChatTextSendCell"];
@@ -43,9 +42,18 @@
         NSArray *textArray = @[
         @"这是初始聊天记录，然后发送消息，会随机生成本人或者对方的信息",
         @"这里只展示几条信息",
-        @"后面的可以自己看着添加，想添加多少都行"];
+        @"后面的可以自己看着添加，想添加多少都行",
+        @"我在多添加几行试试哈",
+        @"我在多添加几行试试哈",
+        @"我在多添加几行试试哈",
+        @"我在多添加几行试试哈",
+        @"我在多添加几行试试哈",
+        @"我在多添加几行试试哈",
+        @"我在多添加几行试试哈",
+        @"我在多添加几行试试哈",
+        @"我在多添加几行试试哈"];
         _messageModelArray = [[NSMutableArray alloc] init];
-        for (NSInteger i = 0; i < 3; i++) {
+        for (NSInteger i = 0; i < textArray.count; i++) {
             int j = arc4random_uniform(10);
             MessageModel *model = [[MessageModel alloc] init];
             model.messageContent = textArray[i];
@@ -87,6 +95,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    UIMenuController
     
     self.view.backgroundColor = RGBColor(245, 245, 245);
     [self.view addSubview:self.chatTableView];
@@ -94,9 +103,11 @@
     self.keyboardView.frame = CGRectMake(0, SH - TabH, SW, 50);
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardTypeChanged:) name:UIKeyboardWillChangeFrameNotification object:nil];
-    
-    NSIndexPath *path = [NSIndexPath indexPathForRow:self.messageModelArray.count - 1 inSection:0];
-    [self.chatTableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.02 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSIndexPath *path = [NSIndexPath indexPathForRow:self.messageModelArray.count - 1 inSection:0];
+        [self.chatTableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+    });
 }
 
 
@@ -134,11 +145,25 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.keyboardView.sendTextField resignFirstResponder];
-    self.keyboardView.frame = CGRectMake(0, SH - TabH, SW, 50);
-    NSIndexPath *path = [NSIndexPath indexPathForRow:self.messageModelArray.count - 1 inSection:0];
+    if ([self.keyboardView.sendTextField isFirstResponder]) {
+        [self.keyboardView.sendTextField resignFirstResponder];
+        self.keyboardView.frame = CGRectMake(0, SH - TabH, SW, 50);
+        NSIndexPath *path = [NSIndexPath indexPathForRow:self.messageModelArray.count - 1 inSection:0];
+        
+        [tableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    }
+}
     
-    [tableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    if ([self.keyboardView isFirstResponder]) {
+        [self.keyboardView.sendTextField resignFirstResponder];
+        
+        self.keyboardView.frame = CGRectMake(0, SH - TabH, SW, 50);
+        NSIndexPath *path = [NSIndexPath indexPathForRow:self.messageModelArray.count - 1 inSection:0];
+        
+        [self.chatTableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+    }
 }
 
 
@@ -148,13 +173,13 @@
     CGRect rect = value.CGRectValue;
     CGFloat duration = time.floatValue;
     CGPoint originP = rect.origin;
+    
+    __block CGFloat h = rect.size.height;
     [UIView animateWithDuration:duration animations:^{
         CGRect frame = self.keyboardView.frame;
         // 键盘隐藏
         if (originP.y == SH) {
-            NSLog(@"1");
-            frame.origin.y = SH;
-            self.keyboardView.frame = frame;
+            self.keyboardView.frame = CGRectMake(0, SH - TabH, SW, 50);
             // 恢复到初始位置
             self.chatTableView.frame = CGRectMake(0, NavH, SW, SH - NavH - TabH);
         } else {
@@ -162,8 +187,12 @@
             self.keyboardView.frame = CGRectMake(0, originP.y - frame.size.height, SW, frame.size.height);
             
             // 更新键盘弹出后chatTableView的位置
-            self.chatTableView.frame = CGRectMake(0, NavH, SW, SH - NavH - rect.size.height - 50);
+            self.chatTableView.frame = CGRectMake(0, NavH, SW, SH - NavH - h - 50);
         }
+        
+        NSIndexPath *path = [NSIndexPath indexPathForRow:self.messageModelArray.count - 1 inSection:0];
+        
+        [self.chatTableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:NO];
     }];
 }
 

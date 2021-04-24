@@ -68,6 +68,9 @@
 		3180CD29262C49F600E51B58 /* ChatTextReciveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180CD28262C49F600E51B58 /* ChatTextReciveCell.m */; };
 		3180CD2D262C4B2A00E51B58 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180CD2C262C4B2A00E51B58 /* MessageModel.m */; };
 		318141DB262D428D006C1EA0 /* ChatKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 318141DA262D428D006C1EA0 /* ChatKeyboardView.m */; };
+		3183B4A826348D28001D6154 /* BarrageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3183B4A726348D28001D6154 /* BarrageModel.m */; };
+		3183B4AC26349F75001D6154 /* BarrageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3183B4AB26349F75001D6154 /* BarrageViewController.m */; };
+		3183B4B02634C5D5001D6154 /* BarrageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3183B4AF2634C5D5001D6154 /* BarrageLabel.m */; };
 		318D1BB226285D00005545B4 /* WechatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D1BB126285D00005545B4 /* WechatDetailViewController.m */; };
 		318D1BB626286AD8005545B4 /* WechatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D1BB526286AD8005545B4 /* WechatView.m */; };
 		319760562494BECE0030E29E /* MyFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 319760552494BECE0030E29E /* MyFileViewController.m */; };
@@ -212,6 +215,12 @@
 		3180CD2C262C4B2A00E51B58 /* MessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
 		318141D9262D428D006C1EA0 /* ChatKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatKeyboardView.h; sourceTree = "<group>"; };
 		318141DA262D428D006C1EA0 /* ChatKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatKeyboardView.m; sourceTree = "<group>"; };
+		3183B4A626348D28001D6154 /* BarrageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarrageModel.h; sourceTree = "<group>"; };
+		3183B4A726348D28001D6154 /* BarrageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarrageModel.m; sourceTree = "<group>"; };
+		3183B4AA26349F75001D6154 /* BarrageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarrageViewController.h; sourceTree = "<group>"; };
+		3183B4AB26349F75001D6154 /* BarrageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarrageViewController.m; sourceTree = "<group>"; };
+		3183B4AE2634C5D5001D6154 /* BarrageLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarrageLabel.h; sourceTree = "<group>"; };
+		3183B4AF2634C5D5001D6154 /* BarrageLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarrageLabel.m; sourceTree = "<group>"; };
 		318D1BB026285CFF005545B4 /* WechatDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatDetailViewController.h; sourceTree = "<group>"; };
 		318D1BB126285D00005545B4 /* WechatDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WechatDetailViewController.m; sourceTree = "<group>"; };
 		318D1BB426286AD8005545B4 /* WechatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatView.h; sourceTree = "<group>"; };
@@ -483,6 +492,8 @@
 				31F514D924BD5A68005FD8E6 /* JieAnitionTransitionViewController.m */,
 				318D1BB026285CFF005545B4 /* WechatDetailViewController.h */,
 				318D1BB126285D00005545B4 /* WechatDetailViewController.m */,
+				3183B4AA26349F75001D6154 /* BarrageViewController.h */,
+				3183B4AB26349F75001D6154 /* BarrageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -494,6 +505,8 @@
 				315A7FC324B9D474004CE615 /* CircleModel.m */,
 				3180CD2B262C4B2A00E51B58 /* MessageModel.h */,
 				3180CD2C262C4B2A00E51B58 /* MessageModel.m */,
+				3183B4A626348D28001D6154 /* BarrageModel.h */,
+				3183B4A726348D28001D6154 /* BarrageModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -517,6 +530,8 @@
 				3180CD28262C49F600E51B58 /* ChatTextReciveCell.m */,
 				318141D9262D428D006C1EA0 /* ChatKeyboardView.h */,
 				318141DA262D428D006C1EA0 /* ChatKeyboardView.m */,
+				3183B4AE2634C5D5001D6154 /* BarrageLabel.h */,
+				3183B4AF2634C5D5001D6154 /* BarrageLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -903,6 +918,7 @@
 				3197605F2494CD5A0030E29E /* MyProgressViewController.m in Sources */,
 				3180CD29262C49F600E51B58 /* ChatTextReciveCell.m in Sources */,
 				31F897D024A478420089DBA5 /* NSString+extension.m in Sources */,
+				3183B4A826348D28001D6154 /* BarrageModel.m in Sources */,
 				318141DB262D428D006C1EA0 /* ChatKeyboardView.m in Sources */,
 				318D1BB626286AD8005545B4 /* WechatView.m in Sources */,
 				31DD9B7D24E5210500297493 /* JieCustomePhotoViewController.m in Sources */,
@@ -913,6 +929,7 @@
 				319760592494C8EB0030E29E /* MyGirlViewController.m in Sources */,
 				3108029524B84708005DF636 /* CommentView.m in Sources */,
 				3108029B24B850EF005DF636 /* CommonInputView.m in Sources */,
+				3183B4AC26349F75001D6154 /* BarrageViewController.m in Sources */,
 				3101B86F24AD9198005D6BC1 /* MultiDetailViewController.m in Sources */,
 				3150F716249B62DE00C1B624 /* RedrawView.m in Sources */,
 				31EBDAAD24947A2800EECBCE /* DrawerViewController.m in Sources */,
@@ -952,6 +969,7 @@
 				314A02912497C15600B0C397 /* SetRoundCornerImageWithShadowViewController.m in Sources */,
 				3150F71E249BD87D00C1B624 /* MultiViewController.m in Sources */,
 				314A02892497263900B0C397 /* GraffitiBoardViewController.m in Sources */,
+				3183B4B02634C5D5001D6154 /* BarrageLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

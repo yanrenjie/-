@@ -48,6 +48,10 @@
             @{
                 @"title" : @"聊天详情",
                 @"vcname" : @"WechatDetailViewController"
+            },
+            @{
+                @"title" : @"弹幕",
+                @"vcname" : @"BarrageViewController"
             }
         ];
     }
